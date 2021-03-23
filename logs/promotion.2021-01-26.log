@@ -1,0 +1,207 @@
+2021-01-26 15:54:42.160 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 18592 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-01-26 15:54:42.175 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-01-26 15:54:45.635 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-01-26 15:54:45.749 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-26 15:54:45.749 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-26 15:54:45.751 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 15:54:47.398 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-26 15:54:47.398 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5151 ms
+2021-01-26 15:54:48.593 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-26 15:54:51.574 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-26 15:54:53.312 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 15:54:53.807 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-01-26 15:54:53.932 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-26 15:54:53.955 [main] INFO  com.xh.EduApplication - Started EduApplication in 13.677 seconds (JVM running for 16.974)
+2021-01-26 15:55:12.944 [http-nio-8001-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 15:55:12.944 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-26 15:55:12.945 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-01-26 15:55:13.169 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher 
+2021-01-26 15:55:13.214 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-01-26 15:55:13.381 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 18
+2021-01-26 16:02:02.806 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 13608 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-01-26 16:02:02.810 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-01-26 16:02:04.694 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-01-26 16:02:04.704 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-26 16:02:04.705 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-26 16:02:04.705 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 16:02:04.991 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-26 16:02:04.992 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2144 ms
+2021-01-26 16:02:05.316 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-26 16:02:07.093 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-26 16:02:07.790 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 16:02:08.060 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-01-26 16:02:08.096 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-26 16:02:08.109 [main] INFO  com.xh.EduApplication - Started EduApplication in 6.311 seconds (JVM running for 9.225)
+2021-01-26 16:02:23.633 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 16:02:23.634 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-26 16:02:23.635 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-01-26 16:02:23.723 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher 
+2021-01-26 16:02:23.758 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-01-26 16:02:23.809 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 18
+2021-01-26 17:00:37.209 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 18488 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-01-26 17:00:37.211 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-01-26 17:00:39.067 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-01-26 17:00:39.080 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-26 17:00:39.081 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-26 17:00:39.081 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 17:00:39.302 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-26 17:00:39.302 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1988 ms
+2021-01-26 17:00:39.957 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-26 17:00:41.789 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-26 17:00:42.772 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 17:00:43.994 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-01-26 17:00:44.048 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-26 17:00:44.058 [main] INFO  com.xh.EduApplication - Started EduApplication in 8.112 seconds (JVM running for 10.643)
+2021-01-26 17:18:56.491 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 19784 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-01-26 17:18:56.509 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-01-26 17:18:59.075 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-01-26 17:18:59.089 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-26 17:18:59.089 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-26 17:18:59.090 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 17:18:59.298 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-26 17:18:59.298 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2735 ms
+2021-01-26 17:19:00.156 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-26 17:19:01.531 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-26 17:19:02.909 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 17:19:03.006 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 17:19:03.353 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-01-26 17:19:03.377 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-26 17:19:03.378 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-26 17:19:03.394 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-26 17:19:03.467 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-26 17:19:03.713 [main] INFO  com.xh.EduApplication - Started EduApplication in 7.957 seconds (JVM running for 11.256)
+2021-01-26 17:22:43.361 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 17:22:43.362 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-26 17:22:43.365 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-01-26 17:23:15.131 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduTeacherMapper.deleteById - ==>  Preparing: UPDATE edu_teacher SET is_deleted=1 WHERE id=? AND is_deleted=0 
+2021-01-26 17:23:15.243 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduTeacherMapper.deleteById - ==> Parameters: 2(String)
+2021-01-26 17:23:15.602 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduTeacherMapper.deleteById - <==    Updates: 1
+2021-01-26 17:23:45.747 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 
+2021-01-26 17:23:45.747 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-01-26 17:23:45.817 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 17
+2021-01-26 19:02:18.492 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 5060 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-01-26 19:02:18.511 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-01-26 19:02:20.287 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-01-26 19:02:20.297 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-26 19:02:20.297 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-26 19:02:20.298 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 19:02:20.470 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-26 19:02:20.470 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1895 ms
+2021-01-26 19:02:20.939 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-26 19:02:22.226 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-26 19:02:23.234 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 19:02:23.327 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 19:02:23.661 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-01-26 19:02:23.708 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-26 19:02:23.709 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-26 19:02:23.730 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-26 19:02:23.782 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-26 19:02:23.957 [main] INFO  com.xh.EduApplication - Started EduApplication in 6.627 seconds (JVM running for 10.249)
+2021-01-26 19:02:39.035 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 19:02:39.035 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-26 19:02:39.037 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-26 19:03:02.314 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.deleteById - ==>  Preparing: UPDATE edu_teacher SET is_deleted=1 WHERE id=? AND is_deleted=0 
+2021-01-26 19:03:02.419 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.deleteById - ==> Parameters: 1(String)
+2021-01-26 19:03:02.422 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.deleteById - <==    Updates: 1
+2021-01-26 19:03:23.361 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 
+2021-01-26 19:03:23.361 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-01-26 19:03:23.441 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 16
+2021-01-26 19:27:42.400 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 19068 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-01-26 19:27:42.407 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-01-26 19:27:43.956 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-01-26 19:27:43.967 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-26 19:27:43.967 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-26 19:27:43.967 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 19:27:44.187 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-26 19:27:44.188 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1740 ms
+2021-01-26 19:27:44.459 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-26 19:27:45.662 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-26 19:27:46.339 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 19:27:46.433 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 19:27:46.649 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-01-26 19:27:46.674 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-26 19:27:46.676 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-26 19:27:46.697 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-26 19:27:46.747 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-26 19:27:46.933 [main] INFO  com.xh.EduApplication - Started EduApplication in 5.158 seconds (JVM running for 7.298)
+2021-01-26 19:28:00.082 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 19:28:00.082 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-26 19:28:00.084 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-26 19:29:59.250 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 18996 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-01-26 19:29:59.253 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-01-26 19:30:00.673 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-01-26 19:30:00.682 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-26 19:30:00.683 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-26 19:30:00.683 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 19:30:00.800 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-26 19:30:00.801 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1497 ms
+2021-01-26 19:30:01.004 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-26 19:30:02.348 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-26 19:30:02.865 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 19:30:02.943 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 19:30:03.133 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-01-26 19:30:03.155 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-26 19:30:03.156 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-26 19:30:03.172 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-26 19:30:03.211 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-26 19:30:03.343 [main] INFO  com.xh.EduApplication - Started EduApplication in 4.775 seconds (JVM running for 6.196)
+2021-01-26 19:30:18.546 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 19:30:18.546 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-26 19:30:18.547 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-01-26 19:30:38.127 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_teacher WHERE is_deleted = 0 
+2021-01-26 19:30:38.167 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==> Parameters: 
+2021-01-26 19:30:38.273 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 LIMIT 0,3 
+2021-01-26 19:30:38.274 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==> Parameters: 
+2021-01-26 19:30:38.287 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - <==      Total: 3
+2021-01-26 20:43:16.884 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 9268 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-01-26 20:43:16.887 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-01-26 20:43:19.213 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-01-26 20:43:19.223 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-26 20:43:19.224 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-26 20:43:19.224 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 20:43:19.390 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-26 20:43:19.390 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2403 ms
+2021-01-26 20:43:19.754 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-26 20:43:21.053 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-26 20:43:21.933 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 20:43:22.008 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 20:43:22.376 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-01-26 20:43:22.412 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-26 20:43:22.413 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-26 20:43:22.432 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-26 20:43:22.522 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-26 20:43:22.709 [main] INFO  com.xh.EduApplication - Started EduApplication in 6.918 seconds (JVM running for 10.447)
+2021-01-26 20:44:06.393 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 20:44:06.393 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-26 20:44:06.394 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-01-26 20:44:39.729 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_teacher WHERE is_deleted = 0 AND level = ? AND gmt_create >= ? AND gmt_create <= ? 
+2021-01-26 20:44:39.765 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==> Parameters: null, null, null
+2021-01-26 20:44:39.875 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 AND level = ? AND gmt_create >= ? AND gmt_create <= ? 
+2021-01-26 20:44:39.876 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==> Parameters: null, null, null
+2021-01-26 20:44:39.892 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - <==      Total: 0
+2021-01-26 20:48:50.877 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 18080 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-01-26 20:48:50.891 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-01-26 20:48:52.611 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-01-26 20:48:52.621 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-26 20:48:52.622 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-26 20:48:52.622 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-26 20:48:52.750 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-26 20:48:52.750 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1775 ms
+2021-01-26 20:48:52.968 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-01-26 20:48:54.172 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-01-26 20:48:54.762 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 20:48:54.835 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 20:48:55.015 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-01-26 20:48:55.034 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-26 20:48:55.035 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-26 20:48:55.050 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-26 20:48:55.098 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-26 20:48:55.229 [main] INFO  com.xh.EduApplication - Started EduApplication in 4.944 seconds (JVM running for 6.562)
+2021-01-26 20:49:00.579 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 20:49:00.579 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-26 20:49:00.582 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-26 20:49:15.273 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_teacher WHERE is_deleted = 0 AND name LIKE ? 
+2021-01-26 20:49:15.299 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==> Parameters: %王%(String)
+2021-01-26 20:49:15.422 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 AND name LIKE ? LIMIT 0,2 
+2021-01-26 20:49:15.422 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - ==> Parameters: %王%(String)
+2021-01-26 20:49:15.429 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectPage - <==      Total: 2

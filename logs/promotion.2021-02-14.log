@@ -1,0 +1,407 @@
+2021-02-14 11:12:26.437 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-14 11:12:26.586 [main] INFO  com.xh.UcenterApplication - Starting UcenterApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 23268 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_ucenter\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-14 11:12:26.587 [main] INFO  com.xh.UcenterApplication - The following profiles are active: dev
+2021-02-14 11:12:35.226 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-14 11:12:35.232 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-14 11:12:35.376 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2021-02-14 11:12:36.407 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=6c9280d8-e461-3ba0-a686-92c65262c858
+2021-02-14 11:12:36.835 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$c25de026] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 11:12:38.024 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8006 (http)
+2021-02-14 11:12:38.037 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8006"]
+2021-02-14 11:12:38.038 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-14 11:12:38.038 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-14 11:12:38.469 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-14 11:12:38.469 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11741 ms
+2021-02-14 11:12:39.476 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-14 11:12:45.854 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-14 11:12:49.520 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-14 11:12:49.628 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 11:12:49.628 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 11:12:49.683 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 11:12:49.684 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 11:12:50.007 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 11:12:52.569 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-14 11:12:53.928 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-14 11:12:54.088 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8006"]
+2021-02-14 11:12:54.259 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8006 (http) with context path ''
+2021-02-14 11:12:55.512 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.1.135:8006 register finished
+2021-02-14 11:12:56.686 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-14 11:12:56.816 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-14 11:12:56.977 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-14 11:12:57.480 [main] INFO  com.xh.UcenterApplication - Started UcenterApplication in 34.459 seconds (JVM running for 41.041)
+2021-02-14 11:23:16.381 [http-nio-8006-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 11:23:16.407 [http-nio-8006-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-14 11:23:16.434 [http-nio-8006-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+2021-02-14 11:23:18.148 [http-nio-8006-exec-2] DEBUG c.x.u.mapper.UcenterMemberMapper.selectCount - ==>  Preparing: SELECT COUNT(1) FROM ucenter_member WHERE mobile = ? 
+2021-02-14 11:23:18.266 [http-nio-8006-exec-2] DEBUG c.x.u.mapper.UcenterMemberMapper.selectCount - ==> Parameters: 18379109520(String)
+2021-02-14 11:23:18.320 [http-nio-8006-exec-2] DEBUG c.x.u.mapper.UcenterMemberMapper.selectCount - <==      Total: 1
+2021-02-14 11:23:19.066 [http-nio-8006-exec-2] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - ==>  Preparing: INSERT INTO ucenter_member ( id, mobile, password, nickname, avatar, is_disabled, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-14 11:23:19.071 [http-nio-8006-exec-2] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - ==> Parameters: 1360791703522390017(String), 18379109520(String), 96e79218965eb72c92a549dd5a330112(String), 翊歌(String), https://edu-longyang.oss-cn-beijing.aliyuncs.com/fa104ef58c4e5bc4270d911da1d1b34d.jpg(String), false(Boolean), 2021-02-14 11:23:19.065(Timestamp), 2021-02-14 11:23:19.065(Timestamp)
+2021-02-14 11:23:19.522 [http-nio-8006-exec-2] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - <==    Updates: 1
+2021-02-14 13:41:40.726 [http-nio-8006-exec-4] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE mobile = ? 
+2021-02-14 13:41:40.973 [http-nio-8006-exec-4] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - ==> Parameters: 18379109520(String)
+2021-02-14 13:41:41.679 [http-nio-8006-exec-4] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - <==      Total: 1
+2021-02-14 13:41:48.166 [http-nio-8006-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 13:41:48.166 [http-nio-8006-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360791703522390017(String)
+2021-02-14 13:41:48.168 [http-nio-8006-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-14 13:53:07.522 [http-nio-8006-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE mobile = ? 
+2021-02-14 13:53:07.523 [http-nio-8006-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - ==> Parameters: 18379109520(String)
+2021-02-14 13:53:07.583 [http-nio-8006-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - <==      Total: 1
+2021-02-14 13:53:07.630 [http-nio-8006-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 13:53:07.630 [http-nio-8006-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360791703522390017(String)
+2021-02-14 13:53:07.651 [http-nio-8006-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-14 13:57:21.645 [http-nio-8006-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE mobile = ? 
+2021-02-14 13:57:21.645 [http-nio-8006-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - ==> Parameters: 18379109520(String)
+2021-02-14 13:57:21.647 [http-nio-8006-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - <==      Total: 1
+2021-02-14 13:57:21.830 [http-nio-8006-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 13:57:21.830 [http-nio-8006-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360791703522390017(String)
+2021-02-14 13:57:21.832 [http-nio-8006-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-14 17:38:55.395 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-14 17:38:55.395 [main] INFO  com.xh.UcenterApplication - Starting UcenterApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 20752 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_ucenter\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-14 17:38:55.412 [main] INFO  com.xh.UcenterApplication - The following profiles are active: dev
+2021-02-14 17:38:59.825 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-14 17:38:59.831 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-14 17:39:00.077 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2021-02-14 17:39:00.719 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=e4de3c28-1d29-36a1-bfcd-57f0feac3308
+2021-02-14 17:39:00.966 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$f2c00140] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 17:39:02.275 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2021-02-14 17:39:02.289 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8150"]
+2021-02-14 17:39:02.290 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-14 17:39:02.290 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-14 17:39:02.610 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-14 17:39:02.611 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7120 ms
+2021-02-14 17:39:03.088 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-14 17:39:05.343 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-14 17:39:07.707 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'constantWxUtils': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wx.open.app_id' in value "${wx.open.app_id}"
+2021-02-14 17:39:07.763 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-02-14 17:39:07.778 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-02-14 17:39:07.781 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-02-14 17:39:07.797 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-14 17:39:08.091 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'constantWxUtils': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wx.open.app_id' in value "${wx.open.app_id}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.xh.UcenterApplication.main(UcenterApplication.java:9)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'wx.open.app_id' in value "${wx.open.app_id}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+2021-02-14 17:40:38.644 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-14 17:40:38.652 [main] INFO  com.xh.UcenterApplication - Starting UcenterApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 16920 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_ucenter\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-14 17:40:38.653 [main] INFO  com.xh.UcenterApplication - The following profiles are active: dev
+2021-02-14 17:40:39.877 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-14 17:40:39.880 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-14 17:40:39.907 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-02-14 17:40:40.234 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=e4de3c28-1d29-36a1-bfcd-57f0feac3308
+2021-02-14 17:40:40.392 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$59f603e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 17:40:40.659 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2021-02-14 17:40:40.669 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8150"]
+2021-02-14 17:40:40.670 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-14 17:40:40.670 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-14 17:40:40.889 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-14 17:40:40.890 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2133 ms
+2021-02-14 17:40:41.096 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-14 17:40:42.144 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-14 17:40:43.452 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-14 17:40:43.505 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 17:40:43.505 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 17:40:43.523 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 17:40:43.523 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 17:40:44.148 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 17:40:46.811 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-14 17:40:48.209 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-14 17:40:48.380 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8150"]
+2021-02-14 17:40:48.456 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2021-02-14 17:40:49.555 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.1.135:8150 register finished
+2021-02-14 17:40:50.739 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-14 17:40:50.813 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-14 17:40:51.019 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-14 17:40:51.418 [main] INFO  com.xh.UcenterApplication - Started UcenterApplication in 15.438 seconds (JVM running for 17.261)
+2021-02-14 17:41:38.460 [http-nio-8150-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 17:41:38.461 [http-nio-8150-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-14 17:41:38.463 [http-nio-8150-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-14 18:19:08.645 [main] INFO  com.xh.UcenterApplication - Starting UcenterApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 24616 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_ucenter\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-14 18:19:08.666 [main] INFO  com.xh.UcenterApplication - The following profiles are active: dev
+2021-02-14 18:19:08.650 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-14 18:19:11.584 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-14 18:19:11.589 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-14 18:19:11.634 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2021-02-14 18:19:12.087 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=e4de3c28-1d29-36a1-bfcd-57f0feac3308
+2021-02-14 18:19:12.287 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$45745c1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 18:19:12.760 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2021-02-14 18:19:12.773 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8150"]
+2021-02-14 18:19:12.773 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-14 18:19:12.774 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-14 18:19:13.056 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-14 18:19:13.057 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4288 ms
+2021-02-14 18:19:13.768 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-14 18:19:15.110 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-14 18:19:17.415 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-14 18:19:17.453 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 18:19:17.453 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 18:19:17.536 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 18:19:17.537 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 18:19:17.778 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 18:19:19.667 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-14 18:19:21.106 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-14 18:19:21.274 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8150"]
+2021-02-14 18:19:21.346 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2021-02-14 18:19:22.583 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.1.135:8150 register finished
+2021-02-14 18:19:23.717 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-14 18:19:24.043 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-14 18:19:24.157 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-14 18:19:24.482 [main] INFO  com.xh.UcenterApplication - Started UcenterApplication in 18.826 seconds (JVM running for 21.873)
+2021-02-14 18:19:49.082 [http-nio-8150-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 18:19:49.083 [http-nio-8150-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-14 18:19:49.085 [http-nio-8150-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-14 18:21:37.533 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-14 18:21:37.559 [main] INFO  com.xh.UcenterApplication - Starting UcenterApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 22400 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_ucenter\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-14 18:21:37.560 [main] INFO  com.xh.UcenterApplication - The following profiles are active: dev
+2021-02-14 18:21:38.668 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-14 18:21:38.670 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-14 18:21:38.700 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2021-02-14 18:21:39.003 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=e4de3c28-1d29-36a1-bfcd-57f0feac3308
+2021-02-14 18:21:39.151 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$252829c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 18:21:39.500 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2021-02-14 18:21:39.509 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8150"]
+2021-02-14 18:21:39.509 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-14 18:21:39.510 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-14 18:21:39.725 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-14 18:21:39.726 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2124 ms
+2021-02-14 18:21:39.924 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-14 18:21:41.447 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-14 18:21:42.263 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-14 18:21:42.286 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 18:21:42.286 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 18:21:42.290 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 18:21:42.290 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 18:21:42.403 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 18:21:43.907 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-14 18:21:45.079 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-14 18:21:45.164 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8150"]
+2021-02-14 18:21:45.186 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2021-02-14 18:21:45.444 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.1.135:8150 register finished
+2021-02-14 18:21:46.568 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-14 18:21:46.586 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-14 18:21:46.623 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-14 18:21:46.772 [main] INFO  com.xh.UcenterApplication - Started UcenterApplication in 11.445 seconds (JVM running for 13.12)
+2021-02-14 18:22:05.034 [http-nio-8150-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 18:22:05.034 [http-nio-8150-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-14 18:22:05.036 [http-nio-8150-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-14 19:46:07.912 [main] INFO  com.xh.UcenterApplication - Starting UcenterApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 18416 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_ucenter\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-14 19:46:07.929 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-14 19:46:07.934 [main] INFO  com.xh.UcenterApplication - The following profiles are active: dev
+2021-02-14 19:46:10.519 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-14 19:46:10.523 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-14 19:46:10.579 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+2021-02-14 19:46:11.085 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=e4de3c28-1d29-36a1-bfcd-57f0feac3308
+2021-02-14 19:46:11.408 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$a4e37af0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 19:46:13.142 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2021-02-14 19:46:13.161 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8150"]
+2021-02-14 19:46:13.162 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-14 19:46:13.163 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-14 19:46:13.454 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-14 19:46:13.454 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5463 ms
+2021-02-14 19:46:13.797 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-14 19:46:15.682 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-14 19:46:17.197 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-14 19:46:17.232 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 19:46:17.233 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 19:46:17.256 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 19:46:17.256 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 19:46:17.478 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 19:46:19.089 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-14 19:46:20.432 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-14 19:46:20.569 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8150"]
+2021-02-14 19:46:20.620 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2021-02-14 19:46:21.272 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.1.135:8150 register finished
+2021-02-14 19:46:22.372 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-14 19:46:22.478 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-14 19:46:22.615 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-14 19:46:22.987 [main] INFO  com.xh.UcenterApplication - Started UcenterApplication in 17.971 seconds (JVM running for 20.953)
+2021-02-14 19:46:38.480 [http-nio-8150-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 19:46:38.480 [http-nio-8150-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-14 19:46:38.482 [http-nio-8150-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-14 19:46:52.549 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-14 19:46:52.586 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String)
+2021-02-14 19:46:52.762 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 0
+2021-02-14 19:51:16.239 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-14 19:51:16.262 [main] INFO  com.xh.UcenterApplication - Starting UcenterApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 23488 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_ucenter\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-14 19:51:16.263 [main] INFO  com.xh.UcenterApplication - The following profiles are active: dev
+2021-02-14 19:51:18.042 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-14 19:51:18.045 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-14 19:51:18.074 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-02-14 19:51:18.558 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=e4de3c28-1d29-36a1-bfcd-57f0feac3308
+2021-02-14 19:51:18.703 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$e6d4c44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 19:51:19.248 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2021-02-14 19:51:19.260 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8150"]
+2021-02-14 19:51:19.261 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-14 19:51:19.261 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-14 19:51:19.583 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-14 19:51:19.584 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3213 ms
+2021-02-14 19:51:19.923 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-14 19:51:21.074 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-14 19:51:22.163 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-14 19:51:22.184 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 19:51:22.185 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 19:51:22.188 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 19:51:22.188 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 19:51:22.309 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 19:51:23.760 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-14 19:51:24.964 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-14 19:51:25.047 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8150"]
+2021-02-14 19:51:25.111 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2021-02-14 19:51:25.309 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.1.135:8150 register finished
+2021-02-14 19:51:26.453 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-14 19:51:26.547 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-14 19:51:26.647 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-14 19:51:26.878 [main] INFO  com.xh.UcenterApplication - Started UcenterApplication in 13.239 seconds (JVM running for 16.091)
+2021-02-14 19:54:30.407 [http-nio-8150-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 19:54:30.408 [http-nio-8150-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-14 19:54:30.410 [http-nio-8150-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-14 19:54:45.464 [http-nio-8150-exec-5] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-14 19:54:45.524 [http-nio-8150-exec-5] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String)
+2021-02-14 19:54:45.577 [http-nio-8150-exec-5] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 0
+2021-02-14 19:59:31.092 [main] INFO  com.xh.UcenterApplication - Starting UcenterApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 21432 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_ucenter\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-14 19:59:31.090 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-14 19:59:31.093 [main] INFO  com.xh.UcenterApplication - The following profiles are active: dev
+2021-02-14 19:59:32.402 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-14 19:59:32.404 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-14 19:59:32.432 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-02-14 19:59:32.705 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=e4de3c28-1d29-36a1-bfcd-57f0feac3308
+2021-02-14 19:59:32.910 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$30db7ff4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 19:59:34.354 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2021-02-14 19:59:34.380 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8150"]
+2021-02-14 19:59:34.381 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-14 19:59:34.381 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-14 19:59:34.610 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-14 19:59:34.610 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3461 ms
+2021-02-14 19:59:34.847 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-14 19:59:35.880 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-14 19:59:36.758 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-14 19:59:36.782 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 19:59:36.782 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 19:59:36.786 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 19:59:36.786 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 19:59:36.892 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 19:59:38.382 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-14 19:59:39.582 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-14 19:59:40.234 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8150"]
+2021-02-14 19:59:40.256 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2021-02-14 19:59:40.335 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.1.135:8150 register finished
+2021-02-14 19:59:41.491 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-14 19:59:41.521 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-14 19:59:41.566 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-14 19:59:41.803 [main] INFO  com.xh.UcenterApplication - Started UcenterApplication in 13.457 seconds (JVM running for 16.231)
+2021-02-14 19:59:58.389 [http-nio-8150-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 19:59:58.389 [http-nio-8150-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-14 19:59:58.390 [http-nio-8150-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-14 20:00:06.969 [http-nio-8150-exec-1] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-14 20:00:06.992 [http-nio-8150-exec-1] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String)
+2021-02-14 20:00:07.188 [http-nio-8150-exec-1] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 0
+2021-02-14 20:00:08.184 [http-nio-8150-exec-1] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - ==>  Preparing: INSERT INTO ucenter_member ( id, openid, nickname, sex, avatar, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-14 20:00:08.186 [http-nio-8150-exec-1] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - ==> Parameters: 1360921765194252289(String), o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String), 风景很美却是别人的(String), 1(Integer), https://thirdwx.qlogo.cn/mmopen/vi_32/3s31upu6rw3jMvicgWEVULLLshegUDxfZeNegwCMg1xd9oeictAccHsHDZFt3XzwHuGaSy0hp8eZxlvSoDD7fdgw/132(String), 2021-02-14 20:00:08.184(Timestamp), 2021-02-14 20:00:08.184(Timestamp)
+2021-02-14 20:00:08.599 [http-nio-8150-exec-1] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - <==    Updates: 1
+2021-02-14 20:19:34.481 [main] INFO  com.xh.UcenterApplication - Starting UcenterApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 27632 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_ucenter\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-14 20:19:34.480 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-14 20:19:42.528 [main] INFO  com.xh.UcenterApplication - The following profiles are active: dev
+2021-02-14 20:19:50.048 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-14 20:19:50.054 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-14 20:19:50.162 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 0 Redis repository interfaces.
+2021-02-14 20:19:51.446 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=e4de3c28-1d29-36a1-bfcd-57f0feac3308
+2021-02-14 20:19:52.508 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$f622d329] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 20:19:54.945 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2021-02-14 20:19:55.100 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8150"]
+2021-02-14 20:19:55.100 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-14 20:19:55.101 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-14 20:19:56.604 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-14 20:19:56.604 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13414 ms
+2021-02-14 20:19:57.742 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-14 20:20:02.812 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-14 20:20:08.519 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-14 20:20:08.541 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 20:20:08.541 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 20:20:08.709 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-14 20:20:08.709 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-14 20:20:09.067 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 20:20:20.513 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-14 20:20:21.858 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-14 20:20:22.129 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8150"]
+2021-02-14 20:20:22.260 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2021-02-14 20:20:24.498 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.1.135:8150 register finished
+2021-02-14 20:20:26.002 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-14 20:20:26.074 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-14 20:20:26.142 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-14 20:20:26.842 [main] INFO  com.xh.UcenterApplication - Started UcenterApplication in 59.818 seconds (JVM running for 71.76)
+2021-02-14 20:20:58.599 [http-nio-8150-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 20:20:58.600 [http-nio-8150-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-14 20:20:58.602 [http-nio-8150-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-14 20:21:14.580 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-14 20:21:14.729 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String)
+2021-02-14 20:21:15.308 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 1
+2021-02-14 20:23:50.372 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 20:23:50.373 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: (String)
+2021-02-14 20:23:50.376 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 0
+2021-02-14 20:23:54.548 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 20:23:54.548 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360921765194252289(String)
+2021-02-14 20:23:54.550 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-14 20:25:00.423 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 20:25:00.423 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360921765194252289(String)
+2021-02-14 20:25:00.426 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-14 20:25:04.943 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 20:25:04.944 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: (String)
+2021-02-14 20:25:04.965 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 0
+2021-02-14 20:25:06.338 [http-nio-8150-exec-1] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 20:25:06.338 [http-nio-8150-exec-1] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360921765194252289(String)
+2021-02-14 20:25:06.340 [http-nio-8150-exec-1] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-14 20:25:30.745 [http-nio-8150-exec-7] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-14 20:25:30.745 [http-nio-8150-exec-7] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String)
+2021-02-14 20:25:30.747 [http-nio-8150-exec-7] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 1
+2021-02-14 20:25:31.097 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 20:25:31.097 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: (String)
+2021-02-14 20:25:31.100 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 0
+2021-02-14 20:25:55.644 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 20:25:55.644 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: (String)
+2021-02-14 20:25:55.648 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 0
+2021-02-14 20:29:35.489 [http-nio-8150-exec-5] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-14 20:29:35.490 [http-nio-8150-exec-5] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String)
+2021-02-14 20:29:35.491 [http-nio-8150-exec-5] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 0
+2021-02-14 20:29:36.579 [http-nio-8150-exec-5] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - ==>  Preparing: INSERT INTO ucenter_member ( id, openid, nickname, sex, avatar, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-14 20:29:36.906 [http-nio-8150-exec-5] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - ==> Parameters: 1360929182380457985(String), o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String), 风景很美却是别人的(String), 1(Integer), https://thirdwx.qlogo.cn/mmopen/vi_32/3s31upu6rw3jMvicgWEVULLLshegUDxfZeNegwCMg1xd9oeictAccHsHDZFt3XzwHuGaSy0hp8eZxlvSoDD7fdgw/132(String), 2021-02-14 20:29:36.579(Timestamp), 2021-02-14 20:29:36.579(Timestamp)
+2021-02-14 20:29:36.929 [http-nio-8150-exec-5] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - <==    Updates: 1
+2021-02-14 20:29:37.496 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 20:29:37.500 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: (String)
+2021-02-14 20:29:37.501 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 0
+2021-02-14 20:29:38.432 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 20:29:38.433 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-14 20:29:38.436 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-14 20:59:04.335 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-14 20:59:04.350 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-14 20:59:04.447 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1

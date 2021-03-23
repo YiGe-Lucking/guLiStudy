@@ -1,0 +1,1021 @@
+2021-02-22 10:39:46.796 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 14804 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-22 10:39:46.798 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-22 10:39:46.816 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-22 10:39:50.173 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-22 10:39:50.177 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-22 10:39:50.279 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 0 Redis repository interfaces.
+2021-02-22 10:39:51.246 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=540ae07a-904c-3802-8bb7-8941aa5504c0
+2021-02-22 10:39:51.924 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$fd6f1cf9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-22 10:39:52.890 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-22 10:39:52.931 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-22 10:39:52.932 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-22 10:39:52.932 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-22 10:39:53.326 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-22 10:39:53.327 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6409 ms
+2021-02-22 10:39:53.742 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-22 10:39:56.506 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-22 10:39:59.111 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-22 10:39:59.139 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 10:39:59.139 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 10:39:59.156 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 10:39:59.156 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 10:39:59.314 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-22 10:40:02.454 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-22 10:40:04.198 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-22 10:40:04.576 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-02-22 10:40:04.931 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-02-22 10:40:08.045 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 172.168.7.66:8001 register finished
+2021-02-22 10:40:09.490 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-22 10:40:09.592 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-22 10:40:09.682 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-22 10:40:10.038 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUserInfoUsingGET_1
+2021-02-22 10:40:10.080 [main] INFO  com.xh.EduApplication - Started EduApplication in 26.073 seconds (JVM running for 33.884)
+2021-02-22 10:40:23.677 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-22 10:40:23.679 [main] INFO  com.xh.OrderApplication - Starting OrderApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 13564 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_order\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-22 10:40:23.681 [main] INFO  com.xh.OrderApplication - The following profiles are active: dev
+2021-02-22 10:40:25.233 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-22 10:40:25.235 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-22 10:40:25.257 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-02-22 10:40:25.557 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=4bd89cb9-8ad2-33cb-af62-484fcdad0feb
+2021-02-22 10:40:25.711 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$fc6b7643] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-22 10:40:26.205 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8007 (http)
+2021-02-22 10:40:26.219 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8007"]
+2021-02-22 10:40:26.221 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-22 10:40:26.222 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-22 10:40:26.564 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-22 10:40:26.564 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2832 ms
+2021-02-22 10:40:26.805 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-22 10:40:28.798 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-22 10:40:30.166 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-22 10:40:30.188 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 10:40:30.188 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 10:40:30.191 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 10:40:30.191 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 10:40:30.293 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-22 10:40:31.872 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-22 10:40:32.962 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-22 10:40:33.074 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8007"]
+2021-02-22 10:40:34.512 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8007 (http) with context path ''
+2021-02-22 10:40:34.562 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-order 172.168.7.66:8007 register finished
+2021-02-22 10:40:35.730 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-22 10:40:35.911 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-22 10:40:36.439 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-22 10:40:38.694 [main] INFO  com.xh.OrderApplication - Started OrderApplication in 19.752 seconds (JVM running for 23.046)
+2021-02-22 10:40:58.696 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-22 10:40:58.705 [main] INFO  com.xh.UcenterApplication - Starting UcenterApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 4156 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_ucenter\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-22 10:40:58.707 [main] INFO  com.xh.UcenterApplication - The following profiles are active: dev
+2021-02-22 10:41:00.460 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-22 10:41:00.462 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-22 10:41:00.490 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-02-22 10:41:00.756 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=e4de3c28-1d29-36a1-bfcd-57f0feac3308
+2021-02-22 10:41:00.914 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$fbe73ba0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-22 10:41:01.307 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2021-02-22 10:41:01.318 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8150"]
+2021-02-22 10:41:01.318 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-22 10:41:01.319 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-22 10:41:01.713 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-22 10:41:01.713 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2953 ms
+2021-02-22 10:41:01.998 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-22 10:41:03.420 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-22 10:41:04.686 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-22 10:41:04.706 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 10:41:04.706 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 10:41:04.711 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 10:41:04.712 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 10:41:04.828 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-22 10:41:06.817 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-22 10:41:07.870 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-22 10:41:07.957 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8150"]
+2021-02-22 10:41:08.063 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2021-02-22 10:41:08.144 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 172.168.7.66:8150 register finished
+2021-02-22 10:41:09.141 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-22 10:41:09.275 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-22 10:41:09.370 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-22 10:41:09.511 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUserInfoUsingGET_1
+2021-02-22 10:41:09.603 [main] INFO  com.xh.UcenterApplication - Started UcenterApplication in 15.362 seconds (JVM running for 18.574)
+2021-02-22 10:50:05.725 [http-nio-8001-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-22 10:50:05.804 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-22 10:50:06.662 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 857 ms
+2021-02-22 10:50:15.536 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 ORDER BY id DESC limit 4 
+2021-02-22 10:50:15.536 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 ORDER BY id DESC limit 4 
+2021-02-22 10:50:15.914 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-22 10:50:15.921 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-22 10:50:23.434 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 4
+2021-02-22 10:50:23.434 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 4
+2021-02-22 10:50:25.076 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course ORDER BY id DESC limit 8 
+2021-02-22 10:50:25.077 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==> Parameters: 
+2021-02-22 10:50:25.083 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course ORDER BY id DESC limit 8 
+2021-02-22 10:50:25.084 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==> Parameters: 
+2021-02-22 10:50:25.735 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - <==      Total: 8
+2021-02-22 10:50:25.805 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - <==      Total: 8
+2021-02-22 10:52:26.663 [http-nio-8001-exec-3] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 10:52:26.668 [http-nio-8001-exec-3] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 10:52:34.297 [http-nio-8001-exec-3] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 10:52:34.600 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 10:52:34.601 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 10:52:36.097 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 10:52:36.231 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 10:52:36.233 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 10:52:36.572 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 10:53:08.579 [http-nio-8150-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-22 10:53:08.727 [http-nio-8150-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-22 10:53:09.314 [http-nio-8150-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 567 ms
+2021-02-22 10:53:16.720 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE mobile = ? 
+2021-02-22 10:53:17.093 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - ==> Parameters: 18379109520(String)
+2021-02-22 10:53:18.027 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - <==      Total: 1
+2021-02-22 10:53:18.120 [http-nio-8150-exec-3] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE mobile = ? 
+2021-02-22 10:53:18.120 [http-nio-8150-exec-3] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - ==> Parameters: 18379109520(String)
+2021-02-22 10:53:18.123 [http-nio-8150-exec-3] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectList - <==      Total: 1
+2021-02-22 10:53:20.449 [http-nio-8150-exec-5] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 10:53:20.449 [http-nio-8150-exec-5] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 10:53:20.452 [http-nio-8150-exec-5] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 10:53:32.286 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-22 10:53:32.287 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 10:53:32.373 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-22 10:53:32.496 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-22 10:53:32.496 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 10:53:32.595 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-22 10:53:34.030 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 10:53:34.030 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 10:53:34.958 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 0,8 
+2021-02-22 10:53:34.958 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 10:53:34.989 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 10:53:37.231 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 10:53:37.231 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 10:53:37.334 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 10:53:37.335 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 10:53:37.344 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 10:53:38.730 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 10:53:38.731 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 10:53:38.736 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 10:53:38.740 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 10:53:38.741 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 10:53:38.744 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 10:53:38.773 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 10:53:38.820 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 10:53:38.825 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 10:53:45.605 [http-nio-8007-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-22 10:53:45.663 [http-nio-8007-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-22 10:53:47.367 [http-nio-8007-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1704 ms
+2021-02-22 10:54:13.550 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 10:54:13.552 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 10:54:13.561 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 10:54:13.598 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 10:54:13.603 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 10:54:13.607 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 10:54:14.185 [http-nio-8001-exec-9] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 10:54:14.185 [http-nio-8001-exec-9] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 10:54:14.196 [http-nio-8001-exec-8] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 10:54:14.196 [http-nio-8001-exec-9] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 10:54:14.197 [http-nio-8001-exec-8] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 10:54:14.198 [http-nio-8001-exec-8] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 10:54:15.095 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 10:54:15.095 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 10:54:15.095 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 10:54:15.106 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 10:54:15.113 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 10:54:15.152 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 10:54:15.758 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 10:54:15.785 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 10:54:15.787 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 10:54:15.785 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 10:54:15.809 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 10:54:15.811 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 10:54:17.602 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 10:54:17.602 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 10:54:18.362 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363683500959469570(String), 20210222105416485(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 10:54:17.301(Timestamp), 2021-02-22 10:54:17.301(Timestamp)
+2021-02-22 10:54:18.362 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363683500959469569(String), 20210222105416606(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 10:54:17.301(Timestamp), 2021-02-22 10:54:17.301(Timestamp)
+2021-02-22 10:54:25.489 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 10:54:25.585 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 10:55:39.126 [http-nio-8150-exec-3] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-22 10:55:39.127 [http-nio-8150-exec-3] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC528nKr8X5KfpPT070mYtfyQ(String)
+2021-02-22 10:55:39.133 [http-nio-8150-exec-3] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 0
+2021-02-22 10:55:40.159 [http-nio-8150-exec-3] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - ==>  Preparing: INSERT INTO ucenter_member ( id, openid, nickname, sex, avatar, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 10:55:40.161 [http-nio-8150-exec-3] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - ==> Parameters: 1363683848491163649(String), o3_SC528nKr8X5KfpPT070mYtfyQ(String), 从来的勇气.(String), 1(Integer), https://thirdwx.qlogo.cn/mmopen/vi_32/YConHRH5GCtzI6hEjoX6BlFRJfcoXvsF2m0tvkSVvIg1Qpmc50EO9a4Erwba4ia1vib6iczYCaREhsGRsibiaxORRhg/132(String), 2021-02-22 10:55:40.159(Timestamp), 2021-02-22 10:55:40.159(Timestamp)
+2021-02-22 10:55:40.422 [http-nio-8150-exec-3] DEBUG com.xh.uService.mapper.UcenterMemberMapper.insert - <==    Updates: 1
+2021-02-22 10:55:41.686 [http-nio-8150-exec-4] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 10:55:41.687 [http-nio-8150-exec-4] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: (String)
+2021-02-22 10:55:41.691 [http-nio-8150-exec-4] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 0
+2021-02-22 10:55:42.714 [http-nio-8150-exec-5] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 10:55:42.714 [http-nio-8150-exec-5] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1363683848491163649(String)
+2021-02-22 10:55:42.716 [http-nio-8150-exec-5] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 10:55:46.672 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 10:55:46.859 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 10:55:46.868 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 0,8 
+2021-02-22 10:55:46.869 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 10:55:47.096 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-22 10:55:47.097 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 10:55:47.249 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 10:55:47.255 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-22 10:55:47.257 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-22 10:55:47.258 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 10:55:47.373 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-22 10:55:49.148 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 10:55:49.148 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 10:55:49.158 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 10:55:49.159 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 10:55:49.162 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 10:55:50.618 [http-nio-8001-exec-2] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 10:55:50.619 [http-nio-8001-exec-2] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 10:55:50.622 [http-nio-8001-exec-2] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 10:55:50.853 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 10:55:50.892 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 10:55:50.931 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 10:55:51.037 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 10:55:51.038 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 10:55:51.040 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 10:55:54.366 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 10:55:54.366 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 10:55:54.409 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 10:55:54.470 [http-nio-8001-exec-1] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 10:55:54.470 [http-nio-8001-exec-1] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 10:55:54.473 [http-nio-8001-exec-1] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 10:55:54.912 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 10:55:54.912 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 10:55:54.915 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 10:55:54.992 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 10:55:54.993 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1363683848491163649(String)
+2021-02-22 10:55:55.018 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 10:55:55.023 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 10:55:55.024 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363683910831050754(String), 20210222105555678(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1363683848491163649(String), 从来的勇气.(String), (String), 1(Integer), 0(Integer), 2021-02-22 10:55:55.021(Timestamp), 2021-02-22 10:55:55.021(Timestamp)
+2021-02-22 10:55:55.156 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 10:55:56.249 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 10:55:56.250 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222105555678(String)
+2021-02-22 10:55:56.771 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 12:41:55.288 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 12:41:55.529 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222105555678(String)
+2021-02-22 12:42:00.629 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 15:43:44.716 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 15:43:44.774 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222105555678(String)
+2021-02-22 15:43:44.851 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 15:43:50.624 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 ORDER BY id DESC limit 4 
+2021-02-22 15:43:50.625 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 ORDER BY id DESC limit 4 
+2021-02-22 15:43:50.679 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-22 15:43:50.679 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-22 15:43:51.160 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 4
+2021-02-22 15:43:51.160 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 4
+2021-02-22 15:43:51.739 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course ORDER BY id DESC limit 8 
+2021-02-22 15:43:51.739 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==> Parameters: 
+2021-02-22 15:43:51.743 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course ORDER BY id DESC limit 8 
+2021-02-22 15:43:51.744 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==> Parameters: 
+2021-02-22 15:43:52.389 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - <==      Total: 8
+2021-02-22 15:43:52.405 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - <==      Total: 8
+2021-02-22 15:44:18.639 [http-nio-8150-exec-10] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-22 15:44:18.690 [http-nio-8150-exec-10] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String)
+2021-02-22 15:44:19.008 [http-nio-8150-exec-10] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 1
+2021-02-22 15:44:19.569 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 15:44:19.571 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: (String)
+2021-02-22 15:44:19.572 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 0
+2021-02-22 15:44:20.598 [http-nio-8150-exec-3] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 15:44:20.614 [http-nio-8150-exec-3] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 15:44:20.616 [http-nio-8150-exec-3] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 16:07:56.861 [main] INFO  com.xh.OrderApplication - Starting OrderApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 17884 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_order\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-22 16:07:56.928 [main] INFO  com.xh.OrderApplication - The following profiles are active: dev
+2021-02-22 16:07:56.935 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-22 16:08:29.336 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-22 16:08:29.339 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-22 16:08:29.489 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+2021-02-22 16:08:30.844 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=1d5a2cc5-cd04-3086-bf38-9712d6c06b76
+2021-02-22 16:08:31.526 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$9b6fabc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-22 16:08:34.798 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8007 (http)
+2021-02-22 16:08:34.976 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8007"]
+2021-02-22 16:08:34.977 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-22 16:08:34.977 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-22 16:08:35.989 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-22 16:08:35.989 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 37057 ms
+2021-02-22 16:08:38.016 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-22 16:08:41.028 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-22 16:08:45.302 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-22 16:08:45.369 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 16:08:45.370 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 16:08:45.419 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 16:08:45.419 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 16:08:45.750 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-22 16:08:47.485 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-22 16:08:48.796 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-22 16:08:49.100 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8007"]
+2021-02-22 16:08:49.333 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8007 (http) with context path ''
+2021-02-22 16:08:50.156 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-order 172.168.7.66:8007 register finished
+2021-02-22 16:08:51.239 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-22 16:08:51.377 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-22 16:08:51.643 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-22 16:08:52.032 [main] INFO  com.xh.OrderApplication - Started OrderApplication in 60.793 seconds (JVM running for 74.312)
+2021-02-22 16:10:25.616 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 ORDER BY id DESC limit 4 
+2021-02-22 16:10:25.991 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-22 16:10:26.631 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 4
+2021-02-22 16:10:26.863 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 16:10:27.242 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 16:10:27.641 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 16:10:28.234 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course ORDER BY id DESC limit 8 
+2021-02-22 16:10:28.235 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==> Parameters: 
+2021-02-22 16:10:28.536 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - <==      Total: 8
+2021-02-22 16:10:43.806 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-22 16:10:43.874 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 16:10:44.498 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-22 16:10:44.590 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-22 16:10:44.590 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 16:10:44.627 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 16:10:44.627 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:10:44.851 [http-nio-8001-exec-5] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-22 16:10:45.900 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 0,8 
+2021-02-22 16:10:45.901 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:10:45.952 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 16:10:48.084 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 16:10:48.084 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:10:48.175 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 16:10:48.175 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:10:48.179 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 16:10:50.183 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 16:10:50.183 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 16:10:50.720 [http-nio-8001-exec-8] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 16:10:50.720 [http-nio-8001-exec-8] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 16:10:51.222 [http-nio-8001-exec-8] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 16:10:51.290 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 16:10:51.290 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:10:51.969 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 16:10:52.053 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 16:10:52.053 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:10:52.539 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 16:10:53.356 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 16:10:53.728 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:10:54.221 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 16:10:54.234 [http-nio-8001-exec-9] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 16:10:54.236 [http-nio-8001-exec-9] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 16:10:54.512 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 16:10:54.796 [http-nio-8001-exec-10] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 16:10:54.797 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 16:10:54.797 [http-nio-8001-exec-10] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 16:10:54.797 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:10:55.047 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 16:10:55.720 [http-nio-8001-exec-10] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 16:10:55.776 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 16:10:55.779 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:10:56.213 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 16:10:56.214 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 16:10:56.214 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:10:56.644 [http-nio-8001-exec-9] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 16:10:56.650 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 16:10:56.650 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:10:56.730 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 16:10:56.849 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 16:10:56.849 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:10:56.912 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 16:10:57.002 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 16:11:12.035 [http-nio-8007-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-22 16:11:12.036 [http-nio-8007-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-22 16:11:12.037 [http-nio-8007-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-22 16:11:14.595 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 16:11:14.621 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 16:11:14.673 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 16:11:14.711 [http-nio-8001-exec-1] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 16:11:14.712 [http-nio-8001-exec-1] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:11:14.717 [http-nio-8001-exec-1] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 16:11:14.889 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 16:11:14.889 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 16:11:14.940 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 16:11:15.757 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 16:11:15.766 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 16:11:15.849 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 16:11:17.001 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 16:11:17.232 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363763275111718913(String), 20210222161116089(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 16:11:16.941(Timestamp), 2021-02-22 16:11:16.941(Timestamp)
+2021-02-22 16:11:20.878 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 16:11:21.552 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 16:11:21.553 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 16:11:21.704 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 16:11:21.706 [http-nio-8001-exec-5] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 16:11:21.706 [http-nio-8001-exec-5] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:11:21.986 [http-nio-8001-exec-5] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 16:11:22.221 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 16:11:22.221 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 16:11:22.310 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 16:11:22.606 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 16:11:22.865 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 16:11:22.960 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 16:11:23.354 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 16:11:23.354 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:11:23.354 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161116089(String)
+2021-02-22 16:11:23.356 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363763300847968258(String), 20210222161123426(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 16:11:23.076(Timestamp), 2021-02-22 16:11:23.076(Timestamp)
+2021-02-22 16:11:23.745 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:11:24.662 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 16:11:24.689 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:11:24.690 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:11:24.692 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:15:04.673 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:15:04.674 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:15:04.682 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:15:05.320 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:15:05.321 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:15:05.323 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:15:14.333 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:15:14.334 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:15:14.336 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:18:08.611 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:18:08.611 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:18:08.614 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:18:09.229 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:18:09.229 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:18:09.231 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:18:09.298 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:18:09.298 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:18:09.301 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:20:16.425 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:20:16.426 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:20:16.429 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:20:56.223 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:20:56.273 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:20:56.277 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:28:39.521 [http-nio-8007-exec-5] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:28:39.521 [http-nio-8007-exec-5] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:28:39.523 [http-nio-8007-exec-5] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:31:13.381 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-22 16:31:13.577 [main] INFO  com.xh.OrderApplication - Starting OrderApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 1572 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_order\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-22 16:31:13.579 [main] INFO  com.xh.OrderApplication - The following profiles are active: dev
+2021-02-22 16:31:18.253 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-22 16:31:18.294 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-22 16:31:18.355 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2021-02-22 16:31:18.984 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=1d5a2cc5-cd04-3086-bf38-9712d6c06b76
+2021-02-22 16:31:19.383 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$ca04fc5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-22 16:31:20.297 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8007 (http)
+2021-02-22 16:31:20.311 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8007"]
+2021-02-22 16:31:20.311 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-22 16:31:20.311 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-22 16:31:20.650 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-22 16:31:20.651 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6910 ms
+2021-02-22 16:31:21.156 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-22 16:31:23.268 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-22 16:31:27.515 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-22 16:31:27.574 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 16:31:27.574 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 16:31:27.622 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 16:31:27.622 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 16:31:28.737 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-22 16:31:30.865 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-22 16:31:32.144 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-22 16:31:32.320 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8007"]
+2021-02-22 16:31:32.434 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8007 (http) with context path ''
+2021-02-22 16:31:32.807 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-order 172.168.7.66:8007 register finished
+2021-02-22 16:31:33.874 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-22 16:31:33.994 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-22 16:31:34.070 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-22 16:31:34.409 [main] INFO  com.xh.OrderApplication - Started OrderApplication in 25.833 seconds (JVM running for 28.488)
+2021-02-22 16:31:44.838 [http-nio-8007-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-22 16:31:44.838 [http-nio-8007-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-22 16:31:44.840 [http-nio-8007-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-22 16:31:45.319 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:31:45.351 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222161123426(String)
+2021-02-22 16:31:45.478 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:32:43.078 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-22 16:32:43.078 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 ORDER BY id DESC limit 4 
+2021-02-22 16:32:43.132 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 ORDER BY id DESC limit 4 
+2021-02-22 16:32:43.230 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-22 16:32:43.230 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-22 16:32:43.244 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 16:32:43.246 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 16:32:43.248 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:32:43.817 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-22 16:32:43.854 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 4
+2021-02-22 16:32:44.077 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-22 16:32:44.078 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 16:32:44.077 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 4
+2021-02-22 16:32:44.245 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-22 16:32:44.245 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 0,8 
+2021-02-22 16:32:44.245 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:32:44.502 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course ORDER BY id DESC limit 8 
+2021-02-22 16:32:44.503 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==> Parameters: 
+2021-02-22 16:32:44.504 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course ORDER BY id DESC limit 8 
+2021-02-22 16:32:44.506 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==> Parameters: 
+2021-02-22 16:32:44.515 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - <==      Total: 8
+2021-02-22 16:32:44.518 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 16:32:44.529 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - <==      Total: 8
+2021-02-22 16:32:46.681 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 16:32:46.681 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:32:46.792 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 16:32:46.793 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:32:46.848 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 16:32:48.431 [http-nio-8001-exec-6] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 16:32:48.434 [http-nio-8001-exec-6] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 16:32:49.242 [http-nio-8001-exec-6] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 16:32:49.317 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 16:32:49.362 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:32:49.428 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 16:32:49.467 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 16:32:49.468 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:32:49.486 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 16:32:55.735 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 16:32:55.735 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 16:32:55.737 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 16:32:55.772 [http-nio-8001-exec-9] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 16:32:55.772 [http-nio-8001-exec-9] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:32:55.774 [http-nio-8001-exec-9] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 16:32:55.853 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 16:32:55.853 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 16:32:55.868 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 16:32:59.471 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 16:32:59.891 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 16:33:02.336 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 16:33:04.995 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 16:33:05.043 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363768761487781890(String), 20210222163304688(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 16:33:04.994(Timestamp), 2021-02-22 16:33:04.994(Timestamp)
+2021-02-22 16:33:07.085 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 16:33:07.449 [http-nio-8007-exec-5] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:33:07.449 [http-nio-8007-exec-5] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:33:07.456 [http-nio-8007-exec-5] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:34:59.628 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:34:59.629 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:34:59.633 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:35:43.273 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:35:43.274 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:35:43.276 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:40:48.498 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:40:48.498 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:40:48.500 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:40:48.754 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:40:48.755 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:40:48.757 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:41:12.276 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:41:12.277 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:41:12.311 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:41:24.951 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:41:24.951 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:41:24.954 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:41:56.549 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:41:56.549 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:41:56.552 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:46:04.757 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:46:04.757 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:46:04.760 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:51:22.567 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:51:22.568 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:51:22.569 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:52:55.011 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:52:55.011 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222163304688(String)
+2021-02-22 16:52:55.014 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:54:42.705 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-22 16:54:42.733 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 16:54:42.708 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 16:54:42.739 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:54:42.787 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-22 16:54:42.789 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-22 16:54:42.860 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 16:54:42.865 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-22 16:54:42.902 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 0,8 
+2021-02-22 16:54:42.902 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:54:43.056 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 16:55:07.119 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 16:55:07.120 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:55:07.121 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 16:55:07.253 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:55:07.447 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 16:55:07.447 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:55:07.448 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 16:55:07.449 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:55:07.482 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 16:55:07.483 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:55:07.555 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 16:55:07.555 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:55:07.564 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 16:55:07.564 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:55:07.663 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 16:55:07.858 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 16:55:07.859 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:55:07.862 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 16:55:07.924 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 16:55:07.925 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:55:07.932 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 16:55:07.966 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 16:55:08.331 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 16:55:08.332 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 16:55:08.334 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 16:55:13.580 [http-nio-8001-exec-4] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 16:55:13.580 [http-nio-8001-exec-4] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 16:55:13.583 [http-nio-8001-exec-4] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 16:55:13.596 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 16:55:13.602 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:55:13.700 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 16:55:13.704 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 16:55:13.705 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:55:13.711 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 16:55:24.474 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 16:55:24.474 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 16:55:24.493 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 16:55:24.627 [http-nio-8001-exec-5] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 16:55:24.627 [http-nio-8001-exec-5] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:55:24.715 [http-nio-8001-exec-5] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 16:55:24.792 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 16:55:24.792 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 16:55:24.849 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 16:55:25.390 [http-nio-8150-exec-1] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 16:55:25.398 [http-nio-8150-exec-1] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 16:55:25.535 [http-nio-8150-exec-1] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 16:55:25.595 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 16:55:25.596 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363774384304615425(String), 20210222165525582(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 16:55:25.594(Timestamp), 2021-02-22 16:55:25.594(Timestamp)
+2021-02-22 16:55:25.600 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 16:55:25.641 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:55:25.641 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165525582(String)
+2021-02-22 16:55:25.643 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:55:31.126 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:55:31.160 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165525582(String)
+2021-02-22 16:55:31.164 [http-nio-8007-exec-6] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:57:27.350 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:57:27.351 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165525582(String)
+2021-02-22 16:57:27.354 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:57:31.175 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:57:31.176 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165525582(String)
+2021-02-22 16:57:31.207 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:57:32.159 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.updateById - ==>  Preparing: UPDATE t_order SET order_no=?, course_id=?, course_title=?, course_cover=?, teacher_name=?, member_id=?, nickname=?, mobile=?, total_fee=?, pay_type=?, status=?, is_deleted=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-22 16:57:32.184 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.updateById - ==> Parameters: 20210222165525582(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 0.01(BigDecimal), 1(Integer), 1(Integer), 0(Integer), 2021-02-22 16:55:26.0(Timestamp), 2021-02-22 16:57:32.157(Timestamp), 1363774384304615425(String)
+2021-02-22 16:57:32.333 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.updateById - <==    Updates: 1
+2021-02-22 16:57:32.469 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.PayLogMapper.insert - ==>  Preparing: INSERT INTO t_pay_log ( id, order_no, pay_time, total_fee, transaction_id, trade_state, pay_type, attr, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 16:57:32.471 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.PayLogMapper.insert - ==> Parameters: 1363774916515655682(String), 20210222165525582(String), 2021-02-22 16:57:32.451(Timestamp), 0.01(BigDecimal), 4200000996202102220933614614(String), SUCCESS(String), 1(Integer), {"transaction_id":"4200000996202102220933614614","nonce_str":"hvhoVABvubMTHhIy","trade_state":"SUCCESS","bank_type":"OTHERS","openid":"oHwsHuE1XWQPVp5pDtSO_mOTqqp4","sign":"145E0FDA14EA3D15A1AB275285A33419","return_msg":"OK","fee_type":"CNY","mch_id":"1558950191","cash_fee":"1","out_trade_no":"20210222165525582","cash_fee_type":"CNY","appid":"wx74862e0dfcf69954","total_fee":"1","trade_state_desc":"支付成功","trade_type":"NATIVE","result_code":"SUCCESS","attach":"","time_end":"20210222165539","is_subscribe":"N","return_code":"SUCCESS"}(String), 2021-02-22 16:57:32.469(Timestamp), 2021-02-22 16:57:32.469(Timestamp)
+2021-02-22 16:57:33.140 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:57:33.140 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165525582(String)
+2021-02-22 16:57:33.339 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:57:34.674 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.PayLogMapper.insert - <==    Updates: 1
+2021-02-22 16:57:38.222 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:57:38.222 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165525582(String)
+2021-02-22 16:57:38.224 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:57:38.399 [http-nio-8001-exec-1] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 16:57:38.400 [http-nio-8001-exec-1] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 16:57:38.504 [http-nio-8001-exec-1] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 16:57:38.507 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 16:57:38.507 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:57:38.509 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 16:57:38.511 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 16:57:38.523 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:57:38.528 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 16:58:08.670 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 16:58:08.670 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 16:58:08.672 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 16:58:08.836 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 16:58:08.837 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:58:08.936 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 16:58:08.937 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 16:58:08.938 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:58:08.939 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 16:58:21.437 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 16:58:21.438 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 16:58:21.521 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 16:58:21.564 [http-nio-8001-exec-3] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 16:58:21.566 [http-nio-8001-exec-3] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 16:58:21.567 [http-nio-8001-exec-3] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 16:58:21.606 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 16:58:21.606 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 16:58:21.628 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 16:58:22.484 [http-nio-8150-exec-3] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 16:58:22.484 [http-nio-8150-exec-3] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 16:58:23.757 [http-nio-8150-exec-3] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 16:58:23.808 [http-nio-8007-exec-5] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 16:58:23.813 [http-nio-8007-exec-5] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363775131758948353(String), 20210222165823413(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 16:58:23.793(Timestamp), 2021-02-22 16:58:23.793(Timestamp)
+2021-02-22 16:58:24.217 [http-nio-8007-exec-5] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 16:58:24.630 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:58:24.631 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165823413(String)
+2021-02-22 16:58:24.832 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 16:58:28.476 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 16:58:28.476 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165823413(String)
+2021-02-22 16:58:28.494 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:01:24.665 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:01:24.666 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165823413(String)
+2021-02-22 17:01:24.714 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:02:51.762 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:02:51.763 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165823413(String)
+2021-02-22 17:02:51.764 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:03:30.959 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:03:30.959 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165823413(String)
+2021-02-22 17:03:30.960 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:04:20.011 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:04:20.011 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165823413(String)
+2021-02-22 17:04:20.013 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:04:43.425 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:04:43.425 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165823413(String)
+2021-02-22 17:04:43.427 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:05:38.253 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:05:38.254 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165823413(String)
+2021-02-22 17:05:38.257 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:07:38.316 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:07:38.316 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222165823413(String)
+2021-02-22 17:07:38.317 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:10:26.003 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 ORDER BY id DESC limit 4 
+2021-02-22 17:10:26.003 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 ORDER BY id DESC limit 4 
+2021-02-22 17:10:26.274 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-22 17:10:26.274 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-22 17:10:26.780 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 4
+2021-02-22 17:10:26.780 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 4
+2021-02-22 17:10:28.678 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course ORDER BY id DESC limit 8 
+2021-02-22 17:10:28.678 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==> Parameters: 
+2021-02-22 17:10:28.646 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course ORDER BY id DESC limit 8 
+2021-02-22 17:10:28.810 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - <==      Total: 8
+2021-02-22 17:10:28.700 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==> Parameters: 
+2021-02-22 17:10:28.958 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - <==      Total: 8
+2021-02-22 17:10:39.484 [http-nio-8150-exec-7] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-22 17:10:39.599 [http-nio-8150-exec-7] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String)
+2021-02-22 17:10:40.592 [http-nio-8150-exec-7] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 1
+2021-02-22 17:10:42.403 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 17:10:42.404 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: (String)
+2021-02-22 17:10:42.507 [http-nio-8150-exec-8] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 0
+2021-02-22 17:10:43.848 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 17:10:43.849 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 17:10:44.076 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 17:10:44.939 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-22 17:10:44.945 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 17:10:45.036 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-22 17:10:45.170 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-22 17:10:45.171 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 17:10:45.368 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-22 17:10:46.722 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 17:10:53.001 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:10:53.475 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 0,8 
+2021-02-22 17:10:53.475 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:10:53.636 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 17:10:56.533 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 17:10:56.533 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:10:56.699 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 17:10:56.699 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:10:56.705 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 17:10:58.062 [http-nio-8001-exec-10] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 17:10:58.063 [http-nio-8001-exec-10] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 17:10:58.403 [http-nio-8001-exec-10] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 17:10:58.639 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 17:10:58.711 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:10:58.740 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 17:10:59.002 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 17:10:59.002 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:10:59.157 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 17:11:02.882 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 17:11:02.882 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 17:11:02.883 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 17:11:03.103 [http-nio-8001-exec-8] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 17:11:03.103 [http-nio-8001-exec-8] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:11:03.105 [http-nio-8001-exec-8] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 17:11:03.152 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 17:11:03.166 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 17:11:03.167 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 17:11:03.336 [http-nio-8150-exec-1] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 17:11:03.337 [http-nio-8150-exec-1] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 17:11:03.457 [http-nio-8150-exec-1] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 17:11:03.627 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 17:11:03.629 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363778318763094018(String), 20210222171103480(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 17:11:03.626(Timestamp), 2021-02-22 17:11:03.626(Timestamp)
+2021-02-22 17:11:03.916 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 17:11:03.951 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:11:03.951 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222171103480(String)
+2021-02-22 17:11:03.953 [http-nio-8007-exec-3] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:11:07.091 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:11:07.093 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222171103480(String)
+2021-02-22 17:11:07.094 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:17:21.474 [main] INFO  com.xh.OrderApplication - Starting OrderApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 18728 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_order\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-22 17:17:21.479 [main] INFO  com.xh.OrderApplication - The following profiles are active: dev
+2021-02-22 17:17:21.507 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-22 17:17:27.413 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-22 17:17:27.417 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-22 17:17:27.470 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+2021-02-22 17:17:28.024 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=1d5a2cc5-cd04-3086-bf38-9712d6c06b76
+2021-02-22 17:17:28.304 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$cb857ca2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-22 17:17:29.638 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8007 (http)
+2021-02-22 17:17:29.652 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8007"]
+2021-02-22 17:17:29.653 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-22 17:17:29.653 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-22 17:17:29.928 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-22 17:17:29.928 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8369 ms
+2021-02-22 17:17:30.528 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-22 17:17:32.740 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-22 17:17:36.161 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-22 17:17:36.183 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 17:17:36.184 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 17:17:36.238 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 17:17:36.238 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 17:17:36.446 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-22 17:17:39.254 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-22 17:17:40.568 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-22 17:17:40.755 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8007"]
+2021-02-22 17:17:40.962 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8007 (http) with context path ''
+2021-02-22 17:17:41.704 [http-nio-8007-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-22 17:17:41.704 [http-nio-8007-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-22 17:17:41.706 [http-nio-8007-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-22 17:17:41.776 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-order 172.168.7.66:8007 register finished
+2021-02-22 17:17:42.999 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-22 17:17:43.070 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-22 17:17:43.183 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-22 17:17:43.346 [main] INFO  com.xh.OrderApplication - Started OrderApplication in 27.578 seconds (JVM running for 32.218)
+2021-02-22 17:18:04.465 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:18:04.582 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222171103480(String)
+2021-02-22 17:18:04.643 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:18:50.151 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-22 17:18:50.174 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String)
+2021-02-22 17:18:50.177 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 1
+2021-02-22 17:18:50.287 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 17:18:50.381 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: (String)
+2021-02-22 17:18:50.418 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 0
+2021-02-22 17:18:51.120 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 17:18:51.143 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 17:18:51.158 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 17:19:01.094 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-22 17:19:01.122 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 17:19:01.160 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-22 17:19:01.201 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-22 17:19:01.202 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 17:19:01.204 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-22 17:19:01.276 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 17:19:01.276 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:19:01.369 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 0,8 
+2021-02-22 17:19:01.393 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:19:01.481 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 17:19:03.970 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 17:19:03.970 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:19:03.989 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 17:19:03.990 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:19:04.038 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 17:19:06.637 [http-nio-8001-exec-3] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 17:19:06.638 [http-nio-8001-exec-3] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 17:19:06.647 [http-nio-8001-exec-3] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 17:19:06.690 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 17:19:06.690 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:19:06.691 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 17:19:06.794 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 17:19:06.794 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:19:06.796 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 17:19:12.665 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 17:19:12.665 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 17:19:12.667 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 17:19:12.680 [http-nio-8001-exec-10] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 17:19:12.681 [http-nio-8001-exec-10] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:19:12.685 [http-nio-8001-exec-10] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 17:19:12.761 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 17:19:12.829 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 17:19:12.830 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 17:19:12.880 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 17:19:12.989 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 17:19:13.065 [http-nio-8150-exec-10] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 17:19:13.691 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 17:19:13.693 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363780374236258305(String), 20210222171913835(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 17:19:13.69(Timestamp), 2021-02-22 17:19:13.69(Timestamp)
+2021-02-22 17:19:14.047 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 17:19:14.161 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:19:14.161 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222171913835(String)
+2021-02-22 17:19:14.164 [http-nio-8007-exec-10] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:19:19.805 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:19:19.805 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222171913835(String)
+2021-02-22 17:19:19.808 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:25:14.399 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE openid = ? 
+2021-02-22 17:25:14.399 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - ==> Parameters: o3_SC5yD4NwEdPy1eOMqdP2fA4ds(String)
+2021-02-22 17:25:14.460 [http-nio-8150-exec-4] DEBUG c.xh.uService.mapper.UcenterMemberMapper.selectOne - <==      Total: 1
+2021-02-22 17:25:15.054 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 17:25:15.055 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: (String)
+2021-02-22 17:25:15.190 [http-nio-8150-exec-6] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 0
+2021-02-22 17:25:15.467 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 ORDER BY id DESC limit 4 
+2021-02-22 17:25:15.516 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-22 17:25:15.581 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 4
+2021-02-22 17:25:15.771 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course ORDER BY id DESC limit 8 
+2021-02-22 17:25:15.771 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - ==> Parameters: 
+2021-02-22 17:25:15.796 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectList - <==      Total: 8
+2021-02-22 17:25:16.090 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 17:25:16.090 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 17:25:16.218 [http-nio-8150-exec-7] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 17:25:30.769 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 17:25:30.769 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:25:30.811 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 0,8 
+2021-02-22 17:25:30.811 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:25:30.813 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 17:25:30.828 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-22 17:25:30.828 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 17:25:30.830 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-22 17:25:30.856 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-22 17:25:30.856 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-22 17:25:30.860 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-22 17:25:32.639 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-22 17:25:32.639 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:25:32.724 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 16,8 
+2021-02-22 17:25:32.759 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-22 17:25:32.780 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 8
+2021-02-22 17:25:33.704 [http-nio-8001-exec-8] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 17:25:33.710 [http-nio-8001-exec-8] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 17:25:33.713 [http-nio-8001-exec-8] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 17:25:33.718 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 17:25:33.718 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:25:33.721 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 17:25:33.724 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 17:25:33.724 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:25:33.749 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 17:25:42.449 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 17:25:42.449 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 17:25:42.484 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 17:25:42.571 [http-nio-8001-exec-4] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 17:25:42.603 [http-nio-8001-exec-4] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:25:42.629 [http-nio-8001-exec-4] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 17:25:42.683 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 17:25:42.683 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 17:25:42.685 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 17:25:42.815 [http-nio-8150-exec-9] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 17:25:42.816 [http-nio-8150-exec-9] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 17:25:42.820 [http-nio-8150-exec-9] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 17:25:42.840 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 17:25:42.844 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363782006445465602(String), 20210222172542584(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 17:25:42.838(Timestamp), 2021-02-22 17:25:42.838(Timestamp)
+2021-02-22 17:25:42.852 [http-nio-8007-exec-8] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 17:25:43.200 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:25:43.201 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222172542584(String)
+2021-02-22 17:25:43.203 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:25:44.840 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:25:44.840 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222172542584(String)
+2021-02-22 17:25:44.842 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:32:43.618 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-22 17:32:43.623 [main] INFO  com.xh.OrderApplication - Starting OrderApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 19152 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_order\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-22 17:32:43.624 [main] INFO  com.xh.OrderApplication - The following profiles are active: dev
+2021-02-22 17:32:46.586 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-22 17:32:46.588 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-22 17:32:46.682 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 0 Redis repository interfaces.
+2021-02-22 17:32:47.197 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=1d5a2cc5-cd04-3086-bf38-9712d6c06b76
+2021-02-22 17:32:47.487 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.xh.serviceBase.RedisConfig$$EnhancerBySpringCGLIB$$9f512a42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-22 17:32:48.604 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8007 (http)
+2021-02-22 17:32:48.616 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8007"]
+2021-02-22 17:32:48.724 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-22 17:32:48.725 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-22 17:32:48.896 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-22 17:32:48.896 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5150 ms
+2021-02-22 17:32:49.258 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-22 17:32:50.600 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-22 17:32:52.456 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-22 17:32:52.476 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 17:32:52.476 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 17:32:52.480 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-22 17:32:52.480 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-22 17:32:52.620 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-22 17:32:54.352 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-22 17:32:55.771 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-22 17:32:55.916 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8007"]
+2021-02-22 17:32:56.027 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8007 (http) with context path ''
+2021-02-22 17:32:56.425 [http-nio-8007-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-22 17:32:56.425 [http-nio-8007-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-22 17:32:56.427 [http-nio-8007-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-22 17:32:56.490 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-order 172.168.7.66:8007 register finished
+2021-02-22 17:32:57.418 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:32:57.447 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222172542584(String)
+2021-02-22 17:32:57.483 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:32:57.500 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.updateById - ==>  Preparing: UPDATE t_order SET order_no=?, course_id=?, course_title=?, course_cover=?, teacher_name=?, member_id=?, nickname=?, mobile=?, total_fee=?, pay_type=?, status=?, is_deleted=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-22 17:32:57.502 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.updateById - ==> Parameters: 20210222172542584(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 0.01(BigDecimal), 1(Integer), 1(Integer), 0(Integer), 2021-02-22 17:25:43.0(Timestamp), 2021-02-22 17:32:57.499(Timestamp), 1363782006445465602(String)
+2021-02-22 17:32:57.504 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.updateById - <==    Updates: 1
+2021-02-22 17:32:57.718 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-22 17:32:57.737 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-22 17:32:57.814 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-22 17:32:57.872 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:32:57.872 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222172542584(String)
+2021-02-22 17:32:57.874 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:32:58.062 [main] INFO  com.xh.OrderApplication - Started OrderApplication in 17.358 seconds (JVM running for 19.995)
+2021-02-22 17:32:58.081 [http-nio-8001-exec-6] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 17:32:58.087 [http-nio-8001-exec-6] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 17:32:58.089 [http-nio-8001-exec-6] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 17:32:58.090 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 17:32:58.091 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:32:58.092 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 17:32:58.093 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 17:32:58.094 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:32:58.095 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 17:32:58.182 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.PayLogMapper.insert - ==>  Preparing: INSERT INTO t_pay_log ( id, order_no, pay_time, total_fee, transaction_id, trade_state, pay_type, attr, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 17:32:58.183 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.PayLogMapper.insert - ==> Parameters: 1363783832406417409(String), 20210222172542584(String), 2021-02-22 17:32:57.527(Timestamp), 0.01(BigDecimal), 4200000988202102222657637397(String), SUCCESS(String), 1(Integer), {"transaction_id":"4200000988202102222657637397","nonce_str":"YZqTCdqEtuNRVOJ3","trade_state":"SUCCESS","bank_type":"OTHERS","openid":"oHwsHuE1XWQPVp5pDtSO_mOTqqp4","sign":"08A294DE1C4DC9440CB7AA44970AE553","return_msg":"OK","fee_type":"CNY","mch_id":"1558950191","cash_fee":"1","out_trade_no":"20210222172542584","cash_fee_type":"CNY","appid":"wx74862e0dfcf69954","total_fee":"1","trade_state_desc":"支付成功","trade_type":"NATIVE","result_code":"SUCCESS","attach":"","time_end":"20210222172611","is_subscribe":"N","return_code":"SUCCESS"}(String), 2021-02-22 17:32:58.182(Timestamp), 2021-02-22 17:32:58.182(Timestamp)
+2021-02-22 17:32:58.212 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.PayLogMapper.insert - <==    Updates: 1
+2021-02-22 17:33:09.041 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 17:33:09.117 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 17:33:09.505 [http-nio-8001-exec-7] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 17:33:09.507 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 17:33:09.508 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:33:09.512 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 17:33:09.514 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 17:33:09.514 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:33:09.519 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 17:33:25.103 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course WHERE id = ? 
+2021-02-22 17:33:25.103 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - ==> Parameters: 14(String)
+2021-02-22 17:33:25.107 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduCourseMapper.selectOne - <==      Total: 1
+2021-02-22 17:33:25.137 [http-nio-8001-exec-2] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==>  Preparing: SELECT id,description,gmt_create,gmt_modified FROM edu_course_description WHERE id = ? 
+2021-02-22 17:33:25.138 [http-nio-8001-exec-2] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:33:25.143 [http-nio-8001-exec-2] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.selectList - <==      Total: 1
+2021-02-22 17:33:25.225 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE id=? AND is_deleted=0 
+2021-02-22 17:33:25.225 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - ==> Parameters: 1189389726308478977(String)
+2021-02-22 17:33:25.284 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectById - <==      Total: 1
+2021-02-22 17:33:25.433 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE id=? 
+2021-02-22 17:33:25.439 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - ==> Parameters: 1360929182380457985(String)
+2021-02-22 17:33:25.442 [http-nio-8150-exec-2] DEBUG c.x.uService.mapper.UcenterMemberMapper.selectById - <==      Total: 1
+2021-02-22 17:33:25.541 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==>  Preparing: INSERT INTO t_order ( id, order_no, course_id, course_title, course_cover, teacher_name, member_id, nickname, mobile, pay_type, status, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 17:33:25.542 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.insert - ==> Parameters: 1363783947149991937(String), 20210222173325156(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 1(Integer), 0(Integer), 2021-02-22 17:33:25.54(Timestamp), 2021-02-22 17:33:25.54(Timestamp)
+2021-02-22 17:33:25.579 [http-nio-8007-exec-7] DEBUG com.xh.orderService.mapper.OrderMapper.insert - <==    Updates: 1
+2021-02-22 17:33:26.306 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:33:26.306 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222173325156(String)
+2021-02-22 17:33:26.331 [http-nio-8007-exec-9] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:33:27.983 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:33:27.984 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222173325156(String)
+2021-02-22 17:33:27.987 [http-nio-8007-exec-1] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:33:46.821 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:33:46.822 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222173325156(String)
+2021-02-22 17:33:46.824 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1
+2021-02-22 17:33:46.825 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.updateById - ==>  Preparing: UPDATE t_order SET order_no=?, course_id=?, course_title=?, course_cover=?, teacher_name=?, member_id=?, nickname=?, mobile=?, total_fee=?, pay_type=?, status=?, is_deleted=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-22 17:33:46.827 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.updateById - ==> Parameters: 20210222173325156(String), 14(String), XHTML CSS2 JS整站制作教程课程学习(String), http://edu-longyang.oss-cn-beijing.aliyuncs.com/2020/08/06/587d5686663541d986a750be8c9b99b9java.jpg(String), 晴天(String), 1360929182380457985(String), 风景很美却是别人的(String), 18379109520(String), 0.01(BigDecimal), 1(Integer), 1(Integer), 0(Integer), 2021-02-22 17:33:26.0(Timestamp), 2021-02-22 17:33:46.825(Timestamp), 1363783947149991937(String)
+2021-02-22 17:33:46.870 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.OrderMapper.updateById - <==    Updates: 1
+2021-02-22 17:33:46.875 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.PayLogMapper.insert - ==>  Preparing: INSERT INTO t_pay_log ( id, order_no, pay_time, total_fee, transaction_id, trade_state, pay_type, attr, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-22 17:33:46.876 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.PayLogMapper.insert - ==> Parameters: 1363784036639662081(String), 20210222173325156(String), 2021-02-22 17:33:46.874(Timestamp), 0.01(BigDecimal), 4200000982202102226562109461(String), SUCCESS(String), 1(Integer), {"transaction_id":"4200000982202102226562109461","nonce_str":"QG75HHVoM8W8BFWD","trade_state":"SUCCESS","bank_type":"OTHERS","openid":"oHwsHuE1XWQPVp5pDtSO_mOTqqp4","sign":"24E0745F9A5EC505D21DE8E33E4A26C2","return_msg":"OK","fee_type":"CNY","mch_id":"1558950191","cash_fee":"1","out_trade_no":"20210222173325156","cash_fee_type":"CNY","appid":"wx74862e0dfcf69954","total_fee":"1","trade_state_desc":"支付成功","trade_type":"NATIVE","result_code":"SUCCESS","attach":"","time_end":"20210222173344","is_subscribe":"N","return_code":"SUCCESS"}(String), 2021-02-22 17:33:46.875(Timestamp), 2021-02-22 17:33:46.875(Timestamp)
+2021-02-22 17:33:47.164 [http-nio-8007-exec-4] DEBUG com.xh.orderService.mapper.PayLogMapper.insert - <==    Updates: 1
+2021-02-22 17:33:47.798 [http-nio-8001-exec-8] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==>  Preparing: SELECT ec.id,ec.title,ec.cover,ec.lesson_num, ec.price,ec.cover,ec.buy_count AS buyCount,ec.view_count AS viewCount, et.id AS teacherId,et.`name` AS teacherName,et.intro,et.avatar, es1.id AS subjectLevelOneId,es1.title AS subjectLevelOne, es2.id AS subjectLevelTwoId,es2.title AS subjectLevelTwo, ecd.description FROM edu_course ec JOIN edu_teacher et ON ec.teacher_id = et.id JOIN edu_subject es1 ON ec.subject_parent_id = es1.id JOIN edu_subject es2 ON ec.subject_id = es2.id JOIN edu_course_description ecd ON ec.id = ecd.id WHERE ec.id=? 
+2021-02-22 17:33:47.798 [http-nio-8001-exec-8] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - ==> Parameters: 14(String)
+2021-02-22 17:33:47.860 [http-nio-8001-exec-8] DEBUG c.x.e.m.EduCourseMapper.getCourseInfoByCourseId - <==      Total: 1
+2021-02-22 17:33:47.925 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-22 17:33:47.926 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:33:47.933 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 3
+2021-02-22 17:33:47.937 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-22 17:33:47.937 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 14(String)
+2021-02-22 17:33:47.956 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-22 17:34:49.073 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==>  Preparing: SELECT id,order_no,course_id,course_title,course_cover,teacher_name,member_id,nickname,mobile,total_fee,pay_type,status,is_deleted,gmt_create,gmt_modified FROM t_order WHERE order_no = ? 
+2021-02-22 17:34:49.073 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - ==> Parameters: 20210222173325156(String)
+2021-02-22 17:34:49.075 [http-nio-8007-exec-2] DEBUG com.xh.orderService.mapper.OrderMapper.selectList - <==      Total: 1

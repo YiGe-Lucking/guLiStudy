@@ -1,0 +1,996 @@
+2021-02-06 13:31:25.172 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 26368 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 13:31:25.175 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 13:31:29.318 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 13:31:29.325 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 13:31:29.326 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 13:31:29.328 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 13:31:29.471 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 13:31:29.471 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4248 ms
+2021-02-06 13:31:30.746 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 13:31:37.372 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 13:31:41.782 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-06 13:31:41.885 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 13:31:43.362 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-02-06 13:31:46.011 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-02-06 13:31:46.012 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-06 13:31:46.735 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-06 13:31:47.257 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-06 13:31:49.736 [main] INFO  com.xh.EduApplication - Started EduApplication in 28.231 seconds (JVM running for 30.575)
+2021-02-06 13:34:14.154 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 13:34:14.154 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-06 13:34:14.156 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-06 13:34:19.465 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-06 13:34:19.620 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-06 13:34:20.225 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 0,10 
+2021-02-06 13:34:20.225 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-06 13:34:20.315 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 10
+2021-02-06 13:34:30.261 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 
+2021-02-06 13:34:30.261 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-06 13:34:30.313 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-06 13:34:30.362 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-06 13:34:30.964 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-06 13:34:30.965 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-06 13:34:30.966 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-06 13:34:30.969 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 17
+2021-02-06 13:34:30.982 [http-nio-8001-exec-10] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-06 13:35:00.862 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduCourseMapper.insert - ==>  Preparing: INSERT INTO edu_course ( id, teacher_id, subject_id, subject_parent_id, title, price, lesson_num, cover, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-06 13:35:00.895 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduCourseMapper.insert - ==> Parameters: 1357925738258370561(String), 1189389726308478977(String), 1356238369931149314(String), 1356238369692073985(String), 测试视频上传110(String), 1(BigDecimal), 3(Integer), /static/01.jpg(String), 2021-02-06 13:35:00.858(Timestamp), 2021-02-06 13:35:00.858(Timestamp)
+2021-02-06 13:35:01.593 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduCourseMapper.insert - <==    Updates: 1
+2021-02-06 13:35:01.633 [http-nio-8001-exec-2] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.insert - ==>  Preparing: INSERT INTO edu_course_description ( id, description, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? ) 
+2021-02-06 13:35:01.635 [http-nio-8001-exec-2] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.insert - ==> Parameters: 1357925738258370561(String), <p><strong>的故事的发生</strong></p>(String), 2021-02-06 13:35:01.633(Timestamp), 2021-02-06 13:35:01.633(Timestamp)
+2021-02-06 13:35:01.637 [http-nio-8001-exec-2] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.insert - <==    Updates: 1
+2021-02-06 13:35:03.130 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 13:35:03.131 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:35:03.134 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 0
+2021-02-06 13:35:03.138 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 13:35:03.138 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:35:03.141 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 0
+2021-02-06 13:35:22.147 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduChapterMapper.insert - ==>  Preparing: INSERT INTO edu_chapter ( id, course_id, title, sort, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2021-02-06 13:35:22.147 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduChapterMapper.insert - ==> Parameters: 1357925832416301057(String), 1357925738258370561(String), 第一章 测试(String), 1(Integer), 2021-02-06 13:35:22.147(Timestamp), 2021-02-06 13:35:22.147(Timestamp)
+2021-02-06 13:35:22.150 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduChapterMapper.insert - <==    Updates: 1
+2021-02-06 13:35:22.179 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 13:35:22.180 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:35:22.183 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 13:35:22.185 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 13:35:22.185 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:35:22.187 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 0
+2021-02-06 13:46:05.381 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 13:46:05.492 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:46:05.631 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 13:46:05.777 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 13:46:05.876 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:46:06.070 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 0
+2021-02-06 13:51:08.059 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==>  Preparing: INSERT INTO edu_video ( id, course_id, chapter_id, title, video_source_id, sort, is_free, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-06 13:51:08.151 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==> Parameters: 1357929799858786305(String), 1357925738258370561(String), 1357925832416301057(String), 第一节 测试视频上传(String), 6062e386e5944a6da77a8b1a3f4e13fb(String), 1(Integer), 0(Integer), 2021-02-06 13:51:08.059(Timestamp), 2021-02-06 13:51:08.059(Timestamp)
+2021-02-06 13:51:08.215 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==>  Preparing: INSERT INTO edu_video ( id, course_id, chapter_id, title, video_source_id, sort, is_free, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-06 13:51:08.301 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - <==    Updates: 1
+2021-02-06 13:51:08.312 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==> Parameters: 1357929799800066050(String), 1357925738258370561(String), 1357925832416301057(String), 第一节 测试视频上传(String), 6062e386e5944a6da77a8b1a3f4e13fb(String), 1(Integer), 0(Integer), 2021-02-06 13:51:08.059(Timestamp), 2021-02-06 13:51:08.059(Timestamp)
+2021-02-06 13:51:08.453 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - <==    Updates: 1
+2021-02-06 13:51:08.539 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 13:51:08.545 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:51:08.552 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 13:51:08.556 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 13:51:08.557 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:51:08.634 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 13:51:08.634 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:51:08.637 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 13:51:08.641 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 13:51:08.641 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:51:08.647 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 2
+2021-02-06 13:51:08.724 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 2
+2021-02-06 13:51:13.778 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 13:51:13.779 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357929799800066050(String)
+2021-02-06 13:51:13.781 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 13:51:16.938 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 13:51:16.957 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357929799858786305(String)
+2021-02-06 13:51:17.009 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 13:51:19.174 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.deleteById - ==>  Preparing: DELETE FROM edu_video WHERE id=? 
+2021-02-06 13:51:19.175 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.deleteById - ==> Parameters: 1357929799858786305(String)
+2021-02-06 13:51:19.390 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.deleteById - <==    Updates: 1
+2021-02-06 13:51:19.595 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 13:51:19.596 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:51:19.685 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 13:51:19.727 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 13:51:19.729 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:51:19.741 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 13:51:21.684 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 13:51:21.698 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357929799800066050(String)
+2021-02-06 13:51:21.703 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 13:56:20.269 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 13:56:20.270 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:56:20.341 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 13:56:20.348 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 13:56:20.364 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:56:20.389 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 13:56:21.926 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 13:56:21.927 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357929799800066050(String)
+2021-02-06 13:56:21.931 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 13:59:23.364 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 13:59:23.395 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:59:23.431 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 13:59:23.459 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 13:59:23.459 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:59:23.462 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 13:59:24.344 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 13:59:24.345 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:59:24.367 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 13:59:24.371 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 13:59:24.372 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 13:59:24.375 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 13:59:27.846 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 13:59:27.846 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357929799800066050(String)
+2021-02-06 13:59:27.848 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 13:59:47.366 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 13:59:47.557 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357925738258370561(String), 1357925832416301057(String), 第一节 测试视频名称返回(String), 7034ff97f04d4041a8e86622db9de5c0(String), LTBN3139.MP4(String), 1(Integer), 0(Long), 0(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 13:51:08.0(Timestamp), 2021-02-06 13:59:47.198(Timestamp), 1357929799800066050(String)
+2021-02-06 13:59:47.658 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 14:00:31.858 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 14:00:31.858 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 14:00:31.860 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 14:00:31.905 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 14:00:31.906 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 14:00:32.007 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 14:00:37.824 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 14:00:37.826 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357929799800066050(String)
+2021-02-06 14:00:38.836 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 14:31:09.091 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 14:31:09.093 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 14:31:09.164 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 14:31:09.184 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 14:31:09.185 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357925738258370561(String)
+2021-02-06 14:31:09.259 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 14:31:12.480 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 14:31:12.480 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357929799800066050(String)
+2021-02-06 14:31:12.485 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:03:38.873 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM edu_course 
+2021-02-06 15:03:38.984 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-06 15:03:40.522 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==>  Preparing: SELECT id,teacher_id,subject_id,subject_parent_id,title,price,lesson_num,cover,buy_count,view_count,version,status,is_deleted,gmt_create,gmt_modified FROM edu_course LIMIT 0,10 
+2021-02-06 15:03:40.523 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - ==> Parameters: 
+2021-02-06 15:03:41.452 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduCourseMapper.selectPage - <==      Total: 10
+2021-02-06 15:03:47.260 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 
+2021-02-06 15:03:47.260 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-06 15:03:47.831 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-06 15:03:47.905 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-06 15:03:48.609 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-06 15:03:48.610 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-06 15:03:48.611 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-06 15:03:48.611 [http-nio-8001-exec-2] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 17
+2021-02-06 15:03:48.770 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-06 15:06:28.013 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduCourseMapper.insert - ==>  Preparing: INSERT INTO edu_course ( id, teacher_id, subject_id, subject_parent_id, title, price, lesson_num, cover, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-06 15:06:28.123 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduCourseMapper.insert - ==> Parameters: 1357948757802487809(String), 1189390295668469762(String), 1356238369931149314(String), 1356238369692073985(String), 测试视频上传功能完整测试(String), 0(BigDecimal), 2(Integer), /static/01.jpg(String), 2021-02-06 15:06:28.011(Timestamp), 2021-02-06 15:06:28.011(Timestamp)
+2021-02-06 15:06:29.835 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduCourseMapper.insert - <==    Updates: 1
+2021-02-06 15:06:29.994 [http-nio-8001-exec-6] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.insert - ==>  Preparing: INSERT INTO edu_course_description ( id, description, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? ) 
+2021-02-06 15:06:30.147 [http-nio-8001-exec-6] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.insert - ==> Parameters: 1357948757802487809(String), <p><strong>嘎嘎嘎</strong></p>(String), 2021-02-06 15:06:29.994(Timestamp), 2021-02-06 15:06:29.994(Timestamp)
+2021-02-06 15:06:30.235 [http-nio-8001-exec-6] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.insert - <==    Updates: 1
+2021-02-06 15:06:31.672 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:06:31.673 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:06:31.882 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 0
+2021-02-06 15:06:31.944 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:06:31.956 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:06:31.978 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 0
+2021-02-06 15:06:39.301 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduChapterMapper.insert - ==>  Preparing: INSERT INTO edu_chapter ( id, course_id, title, sort, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2021-02-06 15:06:39.302 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduChapterMapper.insert - ==> Parameters: 1357948805256843265(String), 1357948757802487809(String), 第一章 测试(String), 1(Integer), 2021-02-06 15:06:39.3(Timestamp), 2021-02-06 15:06:39.3(Timestamp)
+2021-02-06 15:06:39.303 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduChapterMapper.insert - <==    Updates: 1
+2021-02-06 15:06:39.454 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:06:39.456 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:06:39.491 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:06:39.493 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:06:39.493 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:06:39.498 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 0
+2021-02-06 15:07:08.076 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==>  Preparing: INSERT INTO edu_video ( id, course_id, chapter_id, title, video_source_id, video_original_name, sort, is_free, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-06 15:07:08.077 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==> Parameters: 1357948925692088321(String), 1357948757802487809(String), 1357948805256843265(String), 第一节 测试(String), abbe9b5cf5104f96a019e3c7894125a6(String), KHNY8075.MP4(String), 1(Integer), 0(Integer), 2021-02-06 15:07:08.013(Timestamp), 2021-02-06 15:07:08.013(Timestamp)
+2021-02-06 15:07:08.078 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - <==    Updates: 1
+2021-02-06 15:07:08.123 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:07:08.124 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:07:08.168 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:07:08.207 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:07:08.208 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:07:08.308 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 15:07:54.122 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:07:54.130 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357948925692088321(String)
+2021-02-06 15:07:54.133 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:08:00.657 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 15:08:00.727 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357948757802487809(String), 1357948805256843265(String), 第一节 测试(String), abbe9b5cf5104f96a019e3c7894125a6(String), KHNY8075.MP4(String), 1(Integer), 0(Long), 0(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 15:07:08.0(Timestamp), 2021-02-06 15:08:00.605(Timestamp), 1357948925692088321(String)
+2021-02-06 15:08:00.987 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 15:08:01.096 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:08:01.096 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:08:01.098 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:08:01.116 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:08:01.117 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:08:01.120 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 15:08:01.289 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 15:08:01.376 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357948757802487809(String), 1357948805256843265(String), 第一节 测试(String), abbe9b5cf5104f96a019e3c7894125a6(String), KHNY8075.MP4(String), 1(Integer), 0(Long), 0(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 15:07:08.0(Timestamp), 2021-02-06 15:08:01.288(Timestamp), 1357948925692088321(String)
+2021-02-06 15:08:01.393 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 15:08:01.472 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:08:01.472 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:08:01.523 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:08:01.589 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:08:01.589 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:08:01.591 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 15:09:59.322 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:09:59.323 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:09:59.548 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:09:59.659 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:09:59.660 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:09:59.792 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 15:10:04.061 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:10:04.063 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357948925692088321(String)
+2021-02-06 15:10:04.095 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:10:13.613 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 15:10:13.829 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357948757802487809(String), 1357948805256843265(String), 第一节 测试(String), 08155d289fc44e5fba234964aa4ca75a(String), LTBN3139.MP4(String), 1(Integer), 0(Long), 0(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 15:07:08.0(Timestamp), 2021-02-06 15:10:13.612(Timestamp), 1357948925692088321(String)
+2021-02-06 15:10:14.247 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 15:10:15.117 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:10:15.118 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:10:15.440 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:10:15.443 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:10:15.444 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:10:15.518 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 15:10:26.554 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:10:26.555 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357948925692088321(String)
+2021-02-06 15:10:26.672 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:10:30.397 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 15:10:30.551 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357948757802487809(String), 1357948805256843265(String), 第一节 测试(String), 08155d289fc44e5fba234964aa4ca75a(String), LTBN3139.MP4(String), 1(Integer), 0(Long), 0(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 15:07:08.0(Timestamp), 2021-02-06 15:10:30.396(Timestamp), 1357948925692088321(String)
+2021-02-06 15:10:30.812 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 15:10:31.817 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:10:31.849 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:10:32.116 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:10:32.203 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:10:32.218 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:10:32.451 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 15:12:38.745 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:12:38.746 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:12:38.748 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:12:38.749 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:12:38.749 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:12:38.752 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 15:12:43.143 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:12:43.143 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357948925692088321(String)
+2021-02-06 15:12:43.145 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:13:27.773 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 15:13:27.976 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357948757802487809(String), 1357948805256843265(String), 第一节 测试(String), 83df06fc7f0448aba89f8be4c9dc8716(String), KHNY8075.MP4(String), 1(Integer), 0(Long), 0(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 15:07:08.0(Timestamp), 2021-02-06 15:13:27.773(Timestamp), 1357948925692088321(String)
+2021-02-06 15:13:27.978 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 15:13:28.040 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:13:28.041 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:13:28.046 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:13:28.048 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:13:28.062 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:13:28.067 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 15:13:58.379 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:13:58.379 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357948925692088321(String)
+2021-02-06 15:13:58.381 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:13:59.255 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 15:13:59.256 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357948757802487809(String), 1357948805256843265(String), 第一节 测试(String), 83df06fc7f0448aba89f8be4c9dc8716(String), KHNY8075.MP4(String), 1(Integer), 0(Long), 0(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 15:07:08.0(Timestamp), 2021-02-06 15:13:59.254(Timestamp), 1357948925692088321(String)
+2021-02-06 15:13:59.258 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 15:13:59.755 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:13:59.756 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:13:59.760 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:13:59.762 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:13:59.762 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:13:59.765 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 15:14:03.798 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:14:03.798 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357948925692088321(String)
+2021-02-06 15:14:03.985 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:14:09.809 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:14:09.810 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:14:09.814 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:14:09.815 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:14:09.816 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:14:09.818 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 15:14:12.031 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:14:12.031 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357948925692088321(String)
+2021-02-06 15:14:12.215 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:14:32.419 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:14:32.421 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357948925692088321(String)
+2021-02-06 15:14:32.425 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:14:53.791 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==>  Preparing: INSERT INTO edu_video ( id, course_id, chapter_id, title, video_source_id, video_original_name, sort, is_free, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-06 15:14:53.791 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==> Parameters: 1357950879247896577(String), 1357948757802487809(String), 1357948805256843265(String), 学而思(String), 5f35342262094c50b400c789d2bed286(String), LTBN3139.MP4(String), 1(Integer), 1(Integer), 2021-02-06 15:14:53.779(Timestamp), 2021-02-06 15:14:53.779(Timestamp)
+2021-02-06 15:14:53.804 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - <==    Updates: 1
+2021-02-06 15:14:53.847 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:14:53.848 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:14:53.850 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:14:53.856 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:14:53.856 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:14:53.868 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 2
+2021-02-06 15:14:57.151 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:14:57.152 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357950879247896577(String)
+2021-02-06 15:14:57.156 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:15:13.766 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 15:15:13.789 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357948757802487809(String), 1357948805256843265(String), 学而思(String), 5f35342262094c50b400c789d2bed286(String), LTBN3139.MP4(String), 1(Integer), 0(Long), 1(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 15:14:54.0(Timestamp), 2021-02-06 15:15:13.765(Timestamp), 1357950879247896577(String)
+2021-02-06 15:15:13.792 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 15:15:13.865 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:15:13.866 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:15:13.870 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:15:13.872 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:15:13.872 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:15:13.876 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 2
+2021-02-06 15:16:09.075 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:16:09.076 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:16:09.080 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:16:09.123 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:16:09.123 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:16:09.125 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 2
+2021-02-06 15:16:11.223 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:16:11.223 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357948925692088321(String)
+2021-02-06 15:16:11.225 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:16:12.807 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:16:12.808 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357950879247896577(String)
+2021-02-06 15:16:12.811 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:19:22.972 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==>  Preparing: INSERT INTO edu_video ( id, course_id, chapter_id, title, video_source_id, video_original_name, sort, is_free, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-06 15:19:22.973 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==> Parameters: 1357952008325173250(String), 1357948757802487809(String), 1357948805256843265(String), 测试上传功能(String), e0d2618f6b8441b6b615062730ee2f6b(String), KWJO2842.MP4(String), 1(Integer), 1(Integer), 2021-02-06 15:19:22.972(Timestamp), 2021-02-06 15:19:22.972(Timestamp)
+2021-02-06 15:19:22.975 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - <==    Updates: 1
+2021-02-06 15:19:23.040 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:19:23.041 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:19:23.046 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:19:23.047 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:19:23.047 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:19:23.051 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-06 15:19:39.283 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:19:39.284 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357952008325173250(String)
+2021-02-06 15:19:39.287 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:19:50.696 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 15:19:50.696 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357948757802487809(String), 1357948805256843265(String), 测试上传功能(String), e0d2618f6b8441b6b615062730ee2f6b(String), KWJO2842.MP4(String), 1(Integer), 0(Long), 1(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 15:19:23.0(Timestamp), 2021-02-06 15:19:50.695(Timestamp), 1357952008325173250(String)
+2021-02-06 15:19:50.700 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 15:19:50.753 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:19:50.754 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:19:50.756 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:19:50.760 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:19:50.761 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:19:50.765 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-06 15:20:08.724 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:20:08.724 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:20:08.726 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:20:08.729 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:20:08.729 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:20:08.731 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-06 15:20:12.877 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:20:12.877 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357952008325173250(String)
+2021-02-06 15:20:12.879 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:20:27.192 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 15:20:27.193 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357948757802487809(String), 1357948805256843265(String), 测试上传功能(String), 531df52fa747481aa553756196fab071(String), LTBN3139.MP4(String), 1(Integer), 0(Long), 1(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 15:19:23.0(Timestamp), 2021-02-06 15:20:27.192(Timestamp), 1357952008325173250(String)
+2021-02-06 15:20:27.194 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 15:20:27.422 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:20:27.423 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:20:27.427 [http-nio-8001-exec-1] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:20:27.429 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:20:27.430 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:20:27.633 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-06 15:20:31.580 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 15:20:31.580 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357952008325173250(String)
+2021-02-06 15:20:31.582 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 15:20:38.398 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==>  Preparing: UPDATE edu_video SET course_id=?, chapter_id=?, title=?, video_source_id=?, video_original_name=?, sort=?, play_count=?, is_free=?, duration=?, status=?, size=?, version=?, gmt_create=?, gmt_modified=? WHERE id=? 
+2021-02-06 15:20:38.399 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - ==> Parameters: 1357948757802487809(String), 1357948805256843265(String), 测试上传功能(String), (String), (String), 1(Integer), 0(Long), 1(Integer), 0.0(Float), Empty(String), 0(Long), 1(Long), 2021-02-06 15:19:23.0(Timestamp), 2021-02-06 15:20:38.397(Timestamp), 1357952008325173250(String)
+2021-02-06 15:20:38.437 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.updateById - <==    Updates: 1
+2021-02-06 15:20:38.492 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 15:20:38.492 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:20:38.495 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 15:20:38.497 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 15:20:38.498 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 15:20:38.504 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-06 19:20:35.173 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 14364 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 19:20:35.190 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 19:20:38.126 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7fd78e1d-bcf9-3c47-900b-8c9d2042b6da
+2021-02-06 19:20:39.564 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 19:20:39.577 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 19:20:39.578 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 19:20:39.578 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 19:20:39.944 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 19:20:39.945 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4702 ms
+2021-02-06 19:20:40.283 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 19:20:44.109 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 19:20:45.958 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-06 19:20:45.984 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 19:20:45.984 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 19:20:45.989 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 19:20:45.989 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 19:20:46.089 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 19:20:47.818 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-06 19:20:49.281 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-02-06 19:20:50.509 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-02-06 19:20:53.864 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.1.135:8001 register finished
+2021-02-06 19:20:55.017 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-06 19:20:55.093 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-06 19:20:55.193 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-06 19:20:55.708 [main] INFO  com.xh.EduApplication - Started EduApplication in 23.116 seconds (JVM running for 26.764)
+2021-02-06 21:07:32.584 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 17980 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 21:07:32.599 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 21:07:35.637 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=522a3ac0-7424-36f2-924e-ecf640306533
+2021-02-06 21:07:36.061 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 21:07:36.071 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 21:07:36.072 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 21:07:36.072 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 21:07:36.265 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 21:07:36.266 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3539 ms
+2021-02-06 21:07:36.758 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 21:07:38.528 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 21:07:39.903 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+2021-02-06 21:07:39.905 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-02-06 21:07:39.916 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-02-06 21:07:39.917 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-02-06 21:07:39.945 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 21:07:40.057 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.xh.EduApplication.main(EduApplication.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:544)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:316)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:343)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:322)
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1233)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 28 common frames omitted
+2021-02-06 21:10:06.391 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 15024 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 21:10:06.402 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 21:10:13.317 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=522a3ac0-7424-36f2-924e-ecf640306533
+2021-02-06 21:10:14.030 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 21:10:14.058 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 21:10:14.069 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 21:10:14.069 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 21:10:14.330 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 21:10:14.331 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7860 ms
+2021-02-06 21:10:14.637 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 21:10:16.093 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 21:10:17.288 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+2021-02-06 21:10:17.295 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-02-06 21:10:17.313 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-02-06 21:10:17.314 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-02-06 21:10:17.352 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 21:10:17.380 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.xh.EduApplication.main(EduApplication.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:544)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:316)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:343)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:322)
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1233)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 28 common frames omitted
+2021-02-06 21:13:18.726 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 16836 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 21:13:18.833 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 21:13:23.974 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=522a3ac0-7424-36f2-924e-ecf640306533
+2021-02-06 21:13:24.813 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 21:13:24.825 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 21:13:24.825 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 21:13:24.825 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 21:13:25.326 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 21:13:25.326 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6432 ms
+2021-02-06 21:13:25.686 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 21:13:29.019 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 21:13:31.971 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+2021-02-06 21:13:31.975 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-02-06 21:13:32.104 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-02-06 21:13:32.106 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-02-06 21:13:32.134 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 21:13:32.186 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.xh.EduApplication.main(EduApplication.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:544)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:316)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:343)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:322)
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1233)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 28 common frames omitted
+2021-02-06 21:22:07.265 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 17268 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 21:22:07.227 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-06 21:22:07.313 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 21:22:13.891 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=53764940-b9ec-32c4-b244-1eefb5b88f7e
+2021-02-06 21:22:14.793 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 21:22:14.805 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 21:22:14.806 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 21:22:14.806 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 21:22:15.063 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 21:22:15.063 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7631 ms
+2021-02-06 21:22:15.574 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 21:22:17.878 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 21:22:20.388 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-06 21:22:20.444 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 21:22:20.444 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 21:22:20.482 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 21:22:20.483 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 21:22:20.767 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 21:22:23.170 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-06 21:22:24.533 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-06 21:22:24.635 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-02-06 21:22:24.819 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-02-06 21:22:28.765 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.1.135:8001 register finished
+2021-02-06 21:22:30.046 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-06 21:22:30.113 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-06 21:22:30.240 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-06 21:22:31.086 [main] INFO  com.xh.EduApplication - Started EduApplication in 27.347 seconds (JVM running for 36.61)
+2021-02-06 21:25:30.520 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 21:25:30.520 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-06 21:25:30.522 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-06 21:25:47.236 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 21:25:47.420 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 21:25:57.573 [http-nio-8001-exec-4] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 21:25:57.612 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 21:25:57.612 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 21:25:58.108 [http-nio-8001-exec-4] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-06 21:26:12.214 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 21:26:12.214 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 21:26:12.252 [http-nio-8001-exec-8] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 21:26:12.254 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 21:26:12.255 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 21:26:12.258 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-06 21:27:18.027 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 21:27:18.028 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357950879247896577(String)
+2021-02-06 21:27:18.030 [http-nio-8001-exec-10] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 21:27:24.156 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 21:27:24.157 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357950879247896577(String)
+2021-02-06 21:27:24.164 [http-nio-8001-exec-2] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 21:29:58.942 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-06 21:29:58.963 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 2736 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 21:29:58.963 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 21:30:02.954 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=53764940-b9ec-32c4-b244-1eefb5b88f7e
+2021-02-06 21:30:04.026 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 21:30:04.039 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 21:30:04.040 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 21:30:04.040 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 21:30:04.255 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 21:30:04.256 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4859 ms
+2021-02-06 21:30:04.819 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 21:30:06.949 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 21:30:08.332 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-06 21:30:08.369 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 21:30:08.369 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 21:30:08.374 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 21:30:08.374 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 21:30:08.493 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 21:30:09.968 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-06 21:30:11.237 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-06 21:30:11.326 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-02-06 21:30:11.404 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-02-06 21:30:11.572 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.1.135:8001 register finished
+2021-02-06 21:30:12.688 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-06 21:30:12.818 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-06 21:30:12.910 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-06 21:30:13.196 [main] INFO  com.xh.EduApplication - Started EduApplication in 16.659 seconds (JVM running for 18.811)
+2021-02-06 21:30:21.448 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 21:30:21.448 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-06 21:30:21.450 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-06 21:30:22.285 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 21:30:22.344 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 21:30:22.462 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 21:30:22.471 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 21:30:22.472 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1357948757802487809(String)
+2021-02-06 21:30:22.505 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 3
+2021-02-06 21:30:26.854 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 21:30:26.855 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1357950879247896577(String)
+2021-02-06 21:30:26.861 [http-nio-8001-exec-8] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 22:00:07.800 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 12816 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 22:00:07.804 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 22:00:11.118 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=522a3ac0-7424-36f2-924e-ecf640306533
+2021-02-06 22:00:12.134 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 22:00:12.166 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 22:00:12.167 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 22:00:12.167 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 22:00:12.515 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 22:00:12.516 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4610 ms
+2021-02-06 22:00:12.895 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 22:00:15.555 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 22:00:17.020 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+2021-02-06 22:00:17.023 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-02-06 22:00:17.043 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-02-06 22:00:17.044 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-02-06 22:00:17.075 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 22:00:17.234 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.xh.EduApplication.main(EduApplication.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:544)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:316)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:343)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:322)
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1233)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 28 common frames omitted
+2021-02-06 22:02:28.845 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 13960 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 22:02:28.886 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 22:02:33.264 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=522a3ac0-7424-36f2-924e-ecf640306533
+2021-02-06 22:02:34.318 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 22:02:34.376 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 22:02:34.377 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 22:02:34.377 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 22:02:34.853 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 22:02:34.853 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5913 ms
+2021-02-06 22:02:35.263 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 22:02:37.744 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 22:02:39.672 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+2021-02-06 22:02:39.674 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-02-06 22:03:10.820 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-02-06 22:03:10.821 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-02-06 22:03:10.921 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 22:03:10.949 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.xh.EduApplication.main(EduApplication.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:544)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:316)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:343)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:322)
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1233)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 28 common frames omitted
+2021-02-06 22:09:43.725 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 35124 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 22:09:43.740 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 22:09:45.575 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=522a3ac0-7424-36f2-924e-ecf640306533
+2021-02-06 22:09:46.100 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 22:09:46.127 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 22:09:46.127 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 22:09:46.127 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 22:09:46.426 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 22:09:46.426 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2625 ms
+2021-02-06 22:09:46.697 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 22:09:48.086 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 22:09:49.392 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+2021-02-06 22:09:49.394 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-02-06 22:09:49.412 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-02-06 22:09:49.413 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-02-06 22:09:49.743 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 22:09:49.790 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodFeignClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.xh.EduApplication.main(EduApplication.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xh.eduService.feign.VodFeignClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:544)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: No Feign Client for loadBalancing defined. Did you forget to include spring-cloud-starter-loadbalancer?
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:316)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:343)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:322)
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1233)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 28 common frames omitted
+2021-02-06 22:13:03.972 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 25628 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 22:13:03.972 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-06 22:13:04.010 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 22:13:07.748 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=cca0ec30-4319-3300-b0a6-cb846deaafdd
+2021-02-06 22:13:08.366 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 22:13:08.378 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 22:13:08.378 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 22:13:08.379 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 22:13:08.649 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 22:13:08.650 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3903 ms
+2021-02-06 22:13:09.070 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 22:13:10.415 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 22:13:12.132 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-06 22:13:12.173 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 22:13:12.173 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 22:13:12.178 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 22:13:12.179 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 22:13:12.377 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 22:13:12.735 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration': Unsatisfied dependency expressed through field 'autoServiceRegistration'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.cloud.client.serviceregistry.AutoServiceRegistration' available: expected single matching bean but found 2: nacosAutoServiceRegistration,eurekaAutoServiceRegistration
+2021-02-06 22:13:12.736 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-06 22:13:12.754 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-02-06 22:13:12.767 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-02-06 22:13:12.768 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-02-06 22:13:12.783 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 22:13:12.806 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field autoServiceRegistration in org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration required a single bean, but 2 were found:
+	- nacosAutoServiceRegistration: defined by method 'nacosAutoServiceRegistration' in class path resource [org/springframework/cloud/alibaba/nacos/NacosDiscoveryAutoConfiguration.class]
+	- eurekaAutoServiceRegistration: defined by method 'eurekaAutoServiceRegistration' in class path resource [org/springframework/cloud/netflix/eureka/EurekaClientAutoConfiguration.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2021-02-06 22:14:34.526 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-06 22:14:34.540 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 13068 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 22:14:34.541 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 22:14:40.366 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=53764940-b9ec-32c4-b244-1eefb5b88f7e
+2021-02-06 22:14:40.967 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 22:14:40.978 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 22:14:40.979 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 22:14:40.979 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 22:14:41.196 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 22:14:41.196 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6495 ms
+2021-02-06 22:14:41.650 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 22:14:43.053 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 22:14:44.409 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-06 22:14:44.442 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 22:14:44.443 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 22:14:44.519 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 22:14:44.520 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 22:14:44.662 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 22:14:47.121 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-06 22:14:49.499 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-06 22:14:49.781 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-02-06 22:14:49.881 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-02-06 22:14:52.935 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.1.135:8001 register finished
+2021-02-06 22:14:54.411 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-06 22:14:54.589 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-06 22:14:54.863 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-06 22:14:56.027 [main] INFO  com.xh.EduApplication - Started EduApplication in 24.495 seconds (JVM running for 27.38)
+2021-02-06 22:16:32.624 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 22:16:32.624 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-06 22:16:32.626 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-02-06 22:16:56.335 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==>  Preparing: SELECT id,name,intro,career,level,avatar,sort,is_deleted,gmt_create,gmt_modified FROM edu_teacher WHERE is_deleted=0 
+2021-02-06 22:16:56.393 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id = ? 
+2021-02-06 22:16:56.469 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - ==> Parameters: 
+2021-02-06 22:16:56.469 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-06 22:16:57.286 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 3
+2021-02-06 22:16:57.291 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==>  Preparing: SELECT id,title,parent_id,sort,gmt_create,gmt_modified FROM edu_subject WHERE parent_id <> ? 
+2021-02-06 22:16:57.291 [http-nio-8001-exec-7] DEBUG c.xh.eduService.mapper.EduTeacherMapper.selectList - <==      Total: 17
+2021-02-06 22:16:57.292 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - ==> Parameters: 0(String)
+2021-02-06 22:16:57.370 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduSubjectMapper.selectList - <==      Total: 6
+2021-02-06 22:17:23.305 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduCourseMapper.insert - ==>  Preparing: INSERT INTO edu_course ( id, teacher_id, subject_id, subject_parent_id, title, price, lesson_num, cover, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-06 22:17:23.324 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduCourseMapper.insert - ==> Parameters: 1358057202866192386(String), 1(String), 1356238369931149314(String), 1356238369692073985(String), cd(String), 1(BigDecimal), 1(Integer), /static/01.jpg(String), 2021-02-06 22:17:23.304(Timestamp), 2021-02-06 22:17:23.304(Timestamp)
+2021-02-06 22:17:24.955 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduCourseMapper.insert - <==    Updates: 1
+2021-02-06 22:17:25.098 [http-nio-8001-exec-1] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.insert - ==>  Preparing: INSERT INTO edu_course_description ( id, description, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ? ) 
+2021-02-06 22:17:25.099 [http-nio-8001-exec-1] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.insert - ==> Parameters: 1358057202866192386(String), <p><strong>sdfsfssfs</strong></p>(String), 2021-02-06 22:17:25.098(Timestamp), 2021-02-06 22:17:25.098(Timestamp)
+2021-02-06 22:17:25.173 [http-nio-8001-exec-1] DEBUG c.x.e.mapper.EduCourseDescriptionMapper.insert - <==    Updates: 1
+2021-02-06 22:17:26.453 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 22:17:26.454 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1358057202866192386(String)
+2021-02-06 22:17:26.722 [http-nio-8001-exec-3] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 0
+2021-02-06 22:17:26.726 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 22:17:26.727 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1358057202866192386(String)
+2021-02-06 22:17:26.791 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 0
+2021-02-06 22:17:50.950 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduChapterMapper.insert - ==>  Preparing: INSERT INTO edu_chapter ( id, course_id, title, sort, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2021-02-06 22:17:50.951 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduChapterMapper.insert - ==> Parameters: 1358057318826115073(String), 1358057202866192386(String), 第一章 测试(String), 1(Integer), 2021-02-06 22:17:50.95(Timestamp), 2021-02-06 22:17:50.95(Timestamp)
+2021-02-06 22:17:51.462 [http-nio-8001-exec-5] DEBUG com.xh.eduService.mapper.EduChapterMapper.insert - <==    Updates: 1
+2021-02-06 22:17:52.039 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 22:17:52.041 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1358057202866192386(String)
+2021-02-06 22:17:52.099 [http-nio-8001-exec-6] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 22:17:52.101 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 22:17:52.101 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1358057202866192386(String)
+2021-02-06 22:17:52.162 [http-nio-8001-exec-6] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 0
+2021-02-06 22:19:24.409 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==>  Preparing: INSERT INTO edu_video ( id, course_id, chapter_id, title, video_source_id, video_original_name, sort, is_free, gmt_create, gmt_modified ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-02-06 22:19:24.410 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - ==> Parameters: 1358057710821572609(String), 1358057202866192386(String), 1358057318826115073(String), 第一节 测试(String), 65ad6c1bc56842a9be33aeba3e7faf01(String), EMYV1055.MP4(String), 1(Integer), 0(Integer), 2021-02-06 22:19:24.409(Timestamp), 2021-02-06 22:19:24.409(Timestamp)
+2021-02-06 22:19:24.473 [http-nio-8001-exec-7] DEBUG com.xh.eduService.mapper.EduVideoMapper.insert - <==    Updates: 1
+2021-02-06 22:19:24.747 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==>  Preparing: SELECT id,course_id,title,sort,gmt_create,gmt_modified FROM edu_chapter WHERE course_id = ? 
+2021-02-06 22:19:24.748 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - ==> Parameters: 1358057202866192386(String)
+2021-02-06 22:19:24.859 [http-nio-8001-exec-9] DEBUG c.xh.eduService.mapper.EduChapterMapper.selectList - <==      Total: 1
+2021-02-06 22:19:24.865 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE course_id = ? 
+2021-02-06 22:19:24.865 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - ==> Parameters: 1358057202866192386(String)
+2021-02-06 22:19:24.874 [http-nio-8001-exec-9] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectList - <==      Total: 1
+2021-02-06 22:19:26.331 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 22:19:26.332 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1358057710821572609(String)
+2021-02-06 22:19:26.337 [http-nio-8001-exec-1] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 22:19:32.513 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==>  Preparing: SELECT id,course_id,chapter_id,title,video_source_id,video_original_name,sort,play_count,is_free,duration,status,size,version,gmt_create,gmt_modified FROM edu_video WHERE id=? 
+2021-02-06 22:19:32.514 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - ==> Parameters: 1358057710821572609(String)
+2021-02-06 22:19:32.516 [http-nio-8001-exec-3] DEBUG com.xh.eduService.mapper.EduVideoMapper.selectById - <==      Total: 1
+2021-02-06 22:26:05.967 [main] INFO  com.xh.EduApplication - Starting EduApplication using Java 1.8.0_131 on LAPTOP-I8GNJ09B with PID 4668 (D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent\service\service_edu\target\classes started by a3818 in D:\IDEA2\ideacode\guliSdu\gitstudy\guli_parent)
+2021-02-06 22:26:05.995 [main] INFO  com.xh.EduApplication - The following profiles are active: dev
+2021-02-06 22:26:06.198 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2021-02-06 22:26:12.224 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=53764940-b9ec-32c4-b244-1eefb5b88f7e
+2021-02-06 22:26:13.183 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2021-02-06 22:26:13.194 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2021-02-06 22:26:13.195 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-06 22:26:13.195 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-06 22:26:13.439 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-06 22:26:13.439 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6088 ms
+2021-02-06 22:26:14.012 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-06 22:26:15.439 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-06 22:26:16.729 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-06 22:26:16.750 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 22:26:16.750 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 22:26:16.754 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-02-06 22:26:16.754 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-06 22:26:16.850 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 22:26:18.368 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-02-06 22:26:19.724 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-06 22:26:19.796 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2021-02-06 22:26:19.820 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2021-02-06 22:26:20.572 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.1.135:8001 register finished
+2021-02-06 22:26:21.781 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-06 22:26:21.842 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-06 22:26:21.927 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-06 22:26:22.210 [main] INFO  com.xh.EduApplication - Started EduApplication in 21.363 seconds (JVM running for 25.589)
