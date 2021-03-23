@@ -81,7 +81,7 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
             throw new GuLiException(20001,"注册信息不能为空");
         }
 
-        // 验证码 TODO 需要登录阿里云短信服务验证通过
+        // 验证码 TODO  需要登录阿里云短信服务验证通过
 
         // 验证手机号是否以及注册过
         QueryWrapper<UcenterMember> ucenterMemberQueryWrapper = new QueryWrapper<>();
